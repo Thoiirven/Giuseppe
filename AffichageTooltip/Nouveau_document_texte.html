@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <style type="text/css">
+            #svg1 {
+                height: 75px;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <div id="svg1"></div>
+    </body>
+</html>
+<script type="text/javascript">
+//La zone d'affichage disponible du svg
+    var svg = d3.select("#svg1")
+    .append("svg")
+    .attr("width", 400)
+    .attr("height", 300)
+
+//affichage d'une forme
+  svg.append("rect")
+    .attr("id", "rectTooltip")
+    .attr("x",20)
+    .attr("y",20)
+    .attr("width",200)
+    .attr("height",50);
+// Tooltip
+var tooltip = d3.select("#svg1")
+  .append("div")
+    .style("position", "absolute")
+    .style("visibility", "hidden")
+    .text("Tu es sur le carré");
+
+//fonction qui affiche ou pas le texte lorsqu'on se situe sur la forme
+d3.select("#rectTooltip")
+  .on("mouseover", function(){return tooltip.style("visibility", "visible").style("top", (event.pageY)+"px").style("left",(event.pageX)+"px");})
+  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+</script>

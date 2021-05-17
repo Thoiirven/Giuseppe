@@ -1,0 +1,146 @@
+[
+    {
+        "Annee": "2012t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "François",
+            "Nom": "HOLLANDE",
+            "PartiPol": "PS",
+            "CodeCouleur": "#e62154"
+        },
+        "Candidat2": {
+            "Prenom": "Nicolas",
+            "Nom": "SARKOZY",
+            "PartiPol": "UMP",
+            "CodeCouleur": "#00407d"
+        }
+    },
+    {
+        "Annee": "2007t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "Ségolène",
+            "Nom": "ROYAL",
+            "PartiPol": "PS",
+            "CodeCouleur": "#e62154"
+        },
+        "Candidat2": {
+            "Prenom": "Nicolas",
+            "Nom": "SARKOZY",
+            "PartiPol": "UMP",
+            "CodeCouleur": "#00407d"
+        }
+    },
+    {
+        "Annee": "2002t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "Jacques",
+            "Nom": "CHIRAC",
+            "PartiPol": "UMP",
+            "CodeCouleur": "#1756c2"
+        },
+        "Candidat2": {
+            "Prenom": "Jean-Marie",
+            "Nom": "LE PEN",
+            "PartiPol": "FN",
+            "CodeCouleur": "#044275"
+        }
+    },
+    {
+        "Annee": "1995t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "Lionel",
+            "Nom": "JOSPIN",
+            "PartiPol": "PS",
+            "CodeCouleur": "#e62154"
+        },
+        "Candidat2": {
+            "Prenom": "Jacques",
+            "Nom": "CHIRAC",
+            "PartiPol": "RPR",
+            "CodeCouleur": "#1756c2"
+        }
+    },
+    {
+        "Annee": "1988t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "François",
+            "Nom": "MITTERRAND",
+            "PartiPol": "PS",
+            "CodeCouleur": "#e62154"
+        },
+        "Candidat2": {
+            "Prenom": "Jacques",
+            "Nom": "CHIRAC",
+            "PartiPol": "RPR",
+            "CodeCouleur": "#1756c2"
+        }
+    },
+    {
+        "Annee": "1981t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "François",
+            "Nom": "MITTERRAND",
+            "PartiPol": "PS",
+            "CodeCouleur": "#e62154"
+        },
+        "Candidat2": {
+            "Prenom": "Valéry",
+            "Nom": "GISCARD D'ESTAING",
+            "PartiPol": "UDF",
+            "CodeCouleur": "#0ec7b1"
+        }
+    },
+    {
+        "Annee": "1974t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "Valéry",
+            "Nom": "GISCARD D'ESTAING",
+            "PartiPol": "RI",
+            "CodeCouleur": "#0ec7b1"
+        },
+        "Candidat2": {
+            "Prenom": "François",
+            "Nom": "MITTERRAND",
+            "PartiPol": "PS",
+            "CodeCouleur": "#e62154"
+        }
+    },
+    {
+        "Annee": "1969t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "Georges",
+            "Nom": "POMPIDOU",
+            "PartiPol": "UDR",
+            "CodeCouleur": "#0c34ad"
+        },
+        "Candidat2": {
+            "Prenom": "Alain",
+            "Nom": "POHER",
+            "PartiPol": "CD",
+            "CodeCouleur": "#0ec7b1"
+        }
+    },
+    {
+        "Annee": "1965t2",
+        "NbCandidats": "2",
+        "Candidat1": {
+            "Prenom": "François",
+            "Nom": "MITTERRAND",
+            "PartiPol": "CIR",
+            "CodeCouleur": "#db76c5"
+        },
+        "Candidat2": {
+            "Prenom": "Charles",
+            "Nom": "DE GAULLE",
+            "PartiPol": "UNR",
+            "CodeCouleur": "#0c34ad"
+        }
+    }
+]
