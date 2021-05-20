@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <!--Début affichage carte-->
+        <script type="text/javascript">
+        var X,Y,Adresse;
+        const date = new Date();
+        const Jour = date.getDay();
+        
+        if(Jour != 1 && Jour != 2){
+
+            d3.json("/data/Emplacement.json", function (data) {
+                if (Jour > 2 || Jour === 0) {
+                    if (Jour === 0) {
+                        X = data[4].EmplacementCamion.X;
+                        Y = data[4].EmplacementCamion.Y;
+                        Adresse = data[4].EmplacementCamion.Adresse;
+                    }
+                    else {
+                        X = data[Jour - 2].EmplacementCamion.X;
+                        Y = data[Jour - 2].EmplacementCamion.Y;
+                        Adresse = data[Jour - 2].EmplacementCamion.Adresse;
+                    }
+                } else {
+                }
+
+            });
+                window.onload = function() {
+                L.mapquest.key = 'o811g09pkEIyNtWWABQIU9T9FSgxcXAP';
+        
+                var map = L.mapquest.map('map', {
+                    center: [X, Y],
+                    layers: L.mapquest.tileLayer('map'),
+                    zoom: 18
+                });
+        
+                map.addControl(L.mapquest.control());
+                L.mapquest.textMarker([X, Y], {
+                    text: 'Giuseppe',
+                    subtext: Adresse ,
+                    position: 'right',
+                    type: 'marker',
+                    icon: {
+                        primaryColor: '#444444',
+                        secondaryColor: '#FFC400',
+                        size: 'lg'
+                    }
+                    }).addTo(map);
+                }
+        }
+        
+        </script>
+        <!--fin affichage carte-->
         <meta charset="utf-8" />
         <title>Giuseppe</title>
     </head>
-    <body class="bodyHome">
+    <body>
         <div id="root"></div>
     </body> 
 </html>

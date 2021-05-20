@@ -5,6 +5,7 @@ import NavbarVideo from './components/NavbarVideo';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import ListePizzas from './components/ListePizzas';
+import BodyHome from './components/BodyHome';
 export default function App() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function App() {
 function Home() {
   return (<React.Fragment>
     <NavbarVideo />
-    
+    <BodyHome />
   </React.Fragment>);
 }
 function Explore() {

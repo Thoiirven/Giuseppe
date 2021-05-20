@@ -1,0 +1,12 @@
+[
+    {
+        "Nom": "Roumaine",
+        "Ingrédients": [
+            { "Ingrédient" : "Mozzarella"},
+            { "Ingrédient" : "Jambon"},
+            { "Ingrédient" : "Champignons"}
+        ],
+        "Base" : "Crème",
+        "LienImage" : " "
+    }
+]
