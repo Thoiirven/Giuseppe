@@ -39,6 +39,13 @@ export const FlexItem = styled.div`
 `;
 export const FlexItemP = styled.p`
     font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+`;
+export const FlexItemI = styled.p`
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 16px;
     text-align: center;
 `;
 export const FlexItemB = styled.button`

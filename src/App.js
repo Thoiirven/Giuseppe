@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import ListePizzas from './components/ListePizzas';
 import BodyHome from './components/BodyHome';
+import ChoixBasePizza from './components/ChoixBasePizza';
 export default function App() {
   return (
     <>
@@ -13,6 +14,8 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/Explore" component={Explore}/>
+          <Route exact path="/Explore/Creme" component={AffCreme}/>
+          <Route exact path="/Explore/Tomate" component={AffTomate}/>
           <Route exact path="/A-propos" component={Apropos}/>
           <Route exact path="/Contact" component={ContactF} />
         </Switch>
@@ -29,7 +32,7 @@ function Home() {
 function Explore() {
   return (<React.Fragment>
     <Navbar />
-    <ListePizzas />
+    <ChoixBasePizza />
   </React.Fragment>);
 }
 function Apropos() {
@@ -41,5 +44,17 @@ function ContactF() {
   return (<React.Fragment>
     <Navbar />
     <Contact />
+  </React.Fragment>);
+}
+function AffCreme() {
+  return (<React.Fragment>
+    <Navbar />
+    <ListePizzas data='Crème'/>
+  </React.Fragment>);
+}
+function AffTomate() {
+  return (<React.Fragment>
+    <Navbar />
+    <ListePizzas data='Tomate'/>
   </React.Fragment>);
 }
