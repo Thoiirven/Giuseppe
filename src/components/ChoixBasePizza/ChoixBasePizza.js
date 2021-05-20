@@ -21,26 +21,26 @@ export const BodyBcreme = styled.button`
     padding: 8px 16px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: auto;
     transition-duration: 0.4s;
     cursor: pointer;
-    float:left;
+    float: right;
     :hover {
         background-color: black;
         color: white;
     }
 `;
 export const BodyBtomate = styled.button`
+    margin : auto;
     background-color: red;
     color: black;
     border: 2px solid #555555;
     padding: 8px 16px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    float:right;
+    float: left;
     :hover {
         background-color: black;
         color: white;
