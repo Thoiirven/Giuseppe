@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BodyHomeBody = styled.div`
     width:1280px;
-    height:720px;
+    height:auto;
     margin:auto;
     z-index : 1;
 `;

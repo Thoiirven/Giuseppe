@@ -5,9 +5,9 @@ const Contact = () => {
         <>
         <BodyHomeBody>
             <BodyDiv>
-                <BodyP>AMR OMAR LOUTFY ALY p1806435</BodyP>
-                <BodyP>BERTOLONE-LOPEZ-SERRANO MELVYN p1804487</BodyP>
-                <BodyP>MARREL CHRISTOPHE p1802696</BodyP>
+                <BodyP>Natan Cino 06</BodyP>
+                <BodyP>Numéro pour commander</BodyP>
+                <BodyP>Insta facebook</BodyP>
             </BodyDiv>
         </BodyHomeBody>
         </>

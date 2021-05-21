@@ -63,7 +63,6 @@ class BodyHome extends Component {
                             <Titre2 id="texteDispo">{this.state.DisponibleTexte}</Titre2>
                             <Carte id="map" />
                             <Titre2>Nous sommes {getJourNom()}{this.state.Endroit}</Titre2>
-                        Test
                     </PageBody>
                     </BodyHomeBody>
                 </Router>

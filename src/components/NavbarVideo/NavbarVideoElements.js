@@ -33,7 +33,7 @@ export const NavLinks = styled.a`
     text-decoration: none;
     background-color: #0000;
     cursor: pointer;
-
+    transition-duration: 0.4s;
     :hover{
         text-decoration: none;
         background:#888888;
@@ -47,7 +47,7 @@ export const NavLogo = styled.a`
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
-
+    transition-duration: 0.4s;
     :hover{
         text-decoration: none;
         background:#888888;

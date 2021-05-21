@@ -22,9 +22,9 @@ export const NavLinks = styled.a`
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition-duration: 0.4s;
     background-color: #0000;
     cursor: pointer;
-
     :hover{
         text-decoration: none;
         background:#888888;
@@ -33,12 +33,12 @@ export const NavLinks = styled.a`
 `;
 
 export const NavLogo = styled.a`
+    transition-duration: 0.4s;
     padding: 14px 16px;
     float: left;
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
-
     :hover{
         text-decoration: none;
         background:#888888;

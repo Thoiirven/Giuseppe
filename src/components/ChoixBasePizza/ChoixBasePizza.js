@@ -16,12 +16,13 @@ export const BodyP = styled.p`
 `;
 export const BodyBcreme = styled.button`
     background-color: white;
+    border-radius: 20%;
     color: black;
     border: 2px solid #555555;
-    padding: 8px 16px;
+    padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
-    margin: auto;
+    font-size: 42px;
+    margin: 2cm;
     transition-duration: 0.4s;
     cursor: pointer;
     float: right;
@@ -31,13 +32,14 @@ export const BodyBcreme = styled.button`
     }
 `;
 export const BodyBtomate = styled.button`
-    margin : auto;
     background-color: red;
+    border-radius: 20%;
     color: black;
     border: 2px solid #555555;
-    padding: 8px 16px;
+    padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 42px;
+    margin: 2cm;
     transition-duration: 0.4s;
     cursor: pointer;
     float: left;

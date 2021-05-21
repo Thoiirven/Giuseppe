@@ -4,12 +4,12 @@
         <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
         <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
         <script src="https://d3js.org/d3.v4.js"></script>
+         <!--Script bootstrap-->
         <!--Début affichage carte-->
         <script type="text/javascript">
         var X,Y,Adresse;
         const date = new Date();
         const Jour = date.getDay();
-        
         if(Jour != 1 && Jour != 2){
 
             d3.json("/data/Emplacement.json", function (data) {
@@ -60,4 +60,10 @@
     <body>
         <div id="root"></div>
     </body> 
+    <footer>
+        <div>
+          <div style="text-align: center;background-color: black;width:1280px;
+          height:40px;margin: auto; color:cornsilk;">WebSite by Christophe Marrel</div>
+        </div>
+    </footer>
 </html>
