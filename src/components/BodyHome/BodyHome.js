@@ -24,3 +24,11 @@ export const Carte = styled.div`
     width: 50%; 
     height: 530px;
 `;
+export const ImageLogo = styled.div`
+    display: flex;
+    margin : auto;
+    width: auto; 
+    height: auto;
+    align-items:center;
+    justify-content:center;
+`;

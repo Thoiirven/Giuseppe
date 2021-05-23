@@ -32,7 +32,7 @@ class ListePizzas extends Component {
             <Router forceRefresh={true}>
                 <BodyHomeBody>
                     <PageBody>
-                        <Titre2>Une vue des différentes Pizzas disponibles avec une base {this.props.data}</Titre2>
+                        <Titre2>Nos pizzas disponibles avec une base {this.props.data}</Titre2>
                         <FlexContainer>
                             {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem><FlexItemP>{Pizzas.Nom}  
                                 <FlexItemI>Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-"+Ingred.Ingrédient+" "))}</FlexItemI>

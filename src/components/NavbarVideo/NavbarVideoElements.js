@@ -53,7 +53,7 @@ export const NavLogo = styled.a`
         background:#888888;
         color: #FFFFFF;
     }
-`
+`;
 
 export const INTRO = styled.h2`
     margin-top: 10%;
@@ -73,4 +73,14 @@ export const TITRE = styled.h1`
     align-items: center;
     font-family: Roboto;
     font-style: normal;
-`
+`;
+export const Texte = styled.h3`
+    font-style: italic;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #EAECEE ;
+    z-index : 1;
+    text-align: center;
+    font-size: 36;
+`;

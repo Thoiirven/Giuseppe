@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import {BrowserRouter as Router,Link} from "react-router-dom";
-import { HeaderHome, NavLogo, INTRO, TITRE, VIDEO, TopNav, NavLinks} from './NavbarVideoElements';
+import { HeaderHome, NavLogo, INTRO, TITRE, VIDEO, TopNav, NavLinks,Texte} from './NavbarVideoElements';
 import video1 from '../../videos/video1.mp4';
 
 const NavbarVideo = () => {
@@ -25,7 +25,9 @@ const NavbarVideo = () => {
                     </TopNav>
                     <INTRO>Introduction</INTRO>
                     <TITRE>Pizzeria Giuseppe</TITRE>
-                    
+                    <Texte>
+                    "Camion de pizzas et spécialités italiennes. Natan et Florence vous accueillent dans leur foodtruck. Bellegarde poussieu, Assieu, Poncin, Sonnay et ses environs"
+                    </Texte>
                 </HeaderHome>
         </>
     );

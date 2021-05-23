@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
-import { BodyHomeBody, PageBody, Titre2, Carte} from './BodyHome';
+import { BodyHomeBody, PageBody, Titre2, Carte,ImageLogo} from './BodyHome';
 import {json,select} from 'd3';
+import logo from '../../images/LogoNatan.jpg';
 
-function getJourNom() {
-    switch (new Date().getDay()) {
+function getJourNom(Date) {
+    switch (Date) {
         case 0:
             return "Dimanche";
         case 1:
@@ -26,11 +27,13 @@ class BodyHome extends Component {
     state = {
         DisponibleTexte: null,
         Endroit: null,
+        Jour:null
     }
     componentDidMount() {
         json("/data/Emplacement.json").then((value) => {
             var DisponibleTexte, Jour, Endroit;
             Jour = new Date().getDay();
+            this.setState({ Jour: Jour });
             if (Jour > 2 || Jour === 0) {
                 if (Jour === 0) {
                     Endroit = " et nous vous attendons à " + value[4].EmplacementCamion.Ville;
@@ -54,15 +57,21 @@ class BodyHome extends Component {
             }
         });
     }
+    getJour(){
+        return this.state.Jour;
+    }
     render() {
         return (
             
                 <Router forceRefresh={true}>
                     <BodyHomeBody>
                         <PageBody>
+                            <ImageLogo>
+                                <img src={logo}/>
+                            </ImageLogo>
                             <Titre2 id="texteDispo">{this.state.DisponibleTexte}</Titre2>
                             <Carte id="map" />
-                            <Titre2>Nous sommes {getJourNom()}{this.state.Endroit}</Titre2>
+                            <Titre2>Nous sommes {getJourNom(this.state.Jour)}{this.state.Endroit}</Titre2>
                     </PageBody>
                     </BodyHomeBody>
                 </Router>
@@ -70,52 +79,5 @@ class BodyHome extends Component {
         );
     }
 }
-/*{this.state.DisponibleTexte}
-{this.state.Endroit}
-const BodyHome = () => {
-    var DisponibleTexte, Jour, Endroit;
-    const donnee = new Donnee();
-    Jour = new Date().getDay() + 1;
-    Jour = 0;
-
-    if (Jour > 2 || Jour === 0) {
-        if (Jour === 0) {
-            console.log("est dans la classe")
-            let ville = donnee.getVille(0);
-            Endroit = " et nous vous attendons à " + ville;
-            console.log("est sortie de la classe")
-        }
-        else {
-            
-            Endroit = " et nous vous attendons à " + donnee.getVille(Jour - 2);
-        }
-        DisponibleTexte = "Aujourd'hui nous faisons des Pizzas !";
-        console.log(Endroit);
-    } else {
-        DisponibleTexte = "Aujourd'hui nous ne faisons pas de Pizza, mais regardez notre carte";
-        Endroit = " ";
-    }
-    json("/data/Emplacement.json").then((value) => {
-        var corps = select("#texteDispo");
-        corps.append( value[0].EmplacementCamion.Ville);
-        console.log(value[0].EmplacementCamion.Ville);
-    });
-
-    console.log(Endroit);
-    return (
-        <>
-            <Router forceRefresh={true}>
-                <BodyHomeBody>
-                    <PageBody>
-                        <Titre2 id = "texteDispo">{DisponibleTexte}</Titre2>
-                        <Titre2>Nous sommes {getJourNom()}{Endroit}</Titre2>
-                        <Carte id = "map"/>
-                        Test
-                    </PageBody>
-                </BodyHomeBody>
-            </Router>
-        </>
-    );
-}*/
 
 export default BodyHome;
