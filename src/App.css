@@ -5,5 +5,9 @@
     font-family: 'Encode Sans Expanded', sans-serif;
   }
   :root {
-      background-color:rgb(255, 196, 0);
+      background:linear-gradient(to right,
+      rgb(20,135,56) 2%,
+      rgb(20,135,56) 20%,
+      rgb(215,14,24) 80%,
+      rgb(215,14,24) 100%);
     }

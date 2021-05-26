@@ -30,12 +30,20 @@ export const FlexContainer = styled.div`
 
 export const FlexItem = styled.div`
     background:#ffffff;
-    border: 0.1px solid #49494980;
-    margin: 2.5cm 2.5cm 2.5cm 2.5cm;
+    border: 3.8px solid #FF7902;
+    margin:auto;
+    margin-bottom:0.5cm;
     box-shadow: 2.5px 2.5px 2.5px #494949;
-    color: Black;
+    color: White;
+    Background-color: black;
     font-weight: bold;
     font-size: 16;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    :hover {
+        background-color: White;
+        color: black;
+    }
 `;
 export const FlexItemP = styled.p`
     font-weight: bold;
@@ -45,22 +53,8 @@ export const FlexItemP = styled.p`
 export const FlexItemI = styled.p`
     font-weight: bold;
     padding: 8px 16px;
+    font-style: italic;
     font-size: 16px;
     text-align: center;
 `;
-export const FlexItemB = styled.button`
-    background-color: white;
-    color: Blue;
-    border: 2px solid #555555;
-    padding: 8px 16px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    float:right;
-    :hover {
-        background-color: Blue;
-        color: white;
-    }
-`;
+

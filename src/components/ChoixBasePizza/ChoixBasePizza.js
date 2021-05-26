@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BodyHomeBody = styled.body`
     width:1280px;
-    height:720px;
+    height:900px;
     margin: auto;
     background-color: #ffffff;
     z-index : 1;
@@ -11,6 +11,7 @@ export const BodyDiv = styled.div`
     padding: 1cm;
 `;
 export const BodyP = styled.p`
+    margin-top: 4cm;
     text-align:center;
     font-size:1.4cm;
 `;
