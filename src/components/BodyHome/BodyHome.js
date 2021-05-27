@@ -30,13 +30,14 @@ export const Carte = styled.div`
     margin : auto;
     width: 50%; 
     height: 530px;
+    margin-top: 1em;
 `;
 export const ImageLogo = styled.div`
     display: flex;
     margin : auto;
-    width: auto; 
-    height: auto;
-    align-items:center;
+    width: 500px; 
+    height: 500px;
+    
     justify-content:center;
 `;
 export const BodyBordure = styled.div`

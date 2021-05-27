@@ -118,7 +118,7 @@ class BodyHome extends Component {
                                 <img src={logo}/>
                             </ImageLogo>
                             <Titre2 id="texteDispo">{this.state.DisponibleTexte}</Titre2>
-                            <Carte id="map" />
+                            
                             <SousTitre>Nous ne prenons aucune réservation via notre site.
                             Merci de nous contacter par téléphone.</SousTitre>
                             <BodyBordure id="divjour">
@@ -143,6 +143,7 @@ class BodyHome extends Component {
                                 Livraison gratuite à partir de trois pizzas achetées, sinon 3€50.
                                 </SousTitreCouleurListeL>
                             </BodyBordure>
+                            <Carte id="map" />
                     </PageBody>
                     </BodyHomeBody>
                 </Router>

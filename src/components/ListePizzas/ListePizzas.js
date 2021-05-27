@@ -38,6 +38,9 @@ export const FlexItem = styled.div`
     color: rgb(20,135,56);
     Background-color: black;
     font-weight: bold;
+    :hover {
+        background-color: #BEBEBE;
+    }
     width: 630px;
     height:1300px;
 
