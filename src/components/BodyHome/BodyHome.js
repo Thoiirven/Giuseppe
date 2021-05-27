@@ -61,7 +61,7 @@ export const Titre2Couleur = styled.div`
     font-size: 1cm;
 `;
 export const SousTitreCouleur = styled.div`
-    color: Red;
+    color: rgb(215,14,24);
     z-index : 1;
     text-align: center;
     font-weight: bold;
@@ -87,7 +87,7 @@ export const BodyBouton = styled.button`
     transition-duration: 0.4s;
     cursor: pointer;
     :hover {
-        background-color: black;
+        background-color: rgb(20,135,56);
         color: white;
     }
 `;

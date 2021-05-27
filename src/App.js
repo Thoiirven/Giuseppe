@@ -7,9 +7,26 @@ import Contact from './components/Contact';
 import ListePizzas from './components/ListePizzas';
 import BodyHome from './components/BodyHome';
 import ChoixBasePizza from './components/ChoixBasePizza';
+import { createGlobalStyle } from 'styled-components';
+import RickonTTF from './Font/TheRickon.ttf';
+
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Rickon';
+    src: url(${RickonTTF}) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+  }
+  h2 {
+    font-family: 'Rickon';
+    font-size:2cm;
+  }
+`;
 export default function App() {
   return (
     <>
+    <GlobalStyle />
       <Router forceRefresh={true} >
         <Switch>
           <Route exact path="/" component={Home}/>

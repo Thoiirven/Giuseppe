@@ -16,7 +16,7 @@ export const BodyP = styled.p`
     font-size:1.4cm;
 `;
 export const BodyBcreme = styled.button`
-    background-color: white;
+    background-color: rgb(253, 241, 184);
     border-radius: 20%;
     color: black;
     border: 2px solid #555555;
@@ -33,7 +33,7 @@ export const BodyBcreme = styled.button`
     }
 `;
 export const BodyBtomate = styled.button`
-    background-color: red;
+    background-color: rgb(215,14,24);
     border-radius: 20%;
     color: black;
     border: 2px solid #555555;

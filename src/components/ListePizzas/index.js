@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { BodyHomeBody, PageBody, Titre2, FlexContainer, FlexItem, FlexItemB, FlexItemP,FlexItemI } from './ListePizzas';
-import { json, select } from 'd3';
+import { BrowserRouter as Router } from "react-router-dom";
+import { BodyHomeBody, PageBody, Titre2, FlexContainer, FlexItem, FlexItemB, FlexItemP,FlexItemI,ImagePizza } from './ListePizzas';
+import { json } from 'd3';
+import logo from '../../images/LogoNatan.jpg';
 class ListePizzas extends Component {
     state = {
-        Pret:false,
+        Pret:null,
         PizzasBaseCreme: []
     }
     ajoutListePizza(){
@@ -18,7 +19,8 @@ class ListePizzas extends Component {
                     element.Ingrédients.forEach(function (element2) {
                         copie2.push({ Ingrédient: element2.Ingrédient });
                     });
-                    copie.push({ Nom: element.Nom, Ingrédients: copie2 });
+                    let image = logo;
+                    copie.push({ Nom: element.Nom, Ingrédients: copie2,Prix: element.Prix,Image:image});
                 }
             });
             this.setState({ PizzasBaseCreme: copie});
@@ -33,17 +35,20 @@ class ListePizzas extends Component {
                 <BodyHomeBody>
                     <PageBody>
                         <Titre2>Nos pizzas disponibles avec une base {this.props.data}</Titre2>
+                        
                         <FlexContainer>
-                            {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem><FlexItemP>{Pizzas.Nom}  
+                            {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem><FlexItemP>{Pizzas.Nom} </FlexItemP> 
+                                <ImagePizza>
+                                    <img src={Pizzas.Image}/>
+                                </ImagePizza>
                                 <FlexItemI>Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-"+Ingred.Ingrédient+" "))}</FlexItemI>
-                            </FlexItemP></FlexItem>))}
+                                <FlexItemI>Prix : {Pizzas.Prix}</FlexItemI>
+                            </FlexItem>))}
                         </FlexContainer>
                     </PageBody>
                 </BodyHomeBody>
             </Router>
         );
     }
-
 }
-
 export default ListePizzas;

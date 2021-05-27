@@ -7,6 +7,7 @@
             { "Ingrédient" : "Champignons"}
         ],
         "Base" : "Crème",
+        "Prix": "9.50 €",
         "LienImage" : " "
     },
     {
@@ -17,6 +18,7 @@
             { "Ingrédient" : "Miel"}
         ],
         "Base" : "Crème",
+        "Prix": "10.00 €",
         "LienImage" : " "
     },
     {
@@ -28,6 +30,7 @@
             { "Ingrédient" : "Oignons Rouges"}
         ],
         "Base" : "Crème",
+        "Prix": "10.50 €",
         "LienImage" : " "
     },
     {
@@ -38,6 +41,7 @@
             { "Ingrédient" : "Morbier"},
             { "Ingrédient" : "Jambon Cru"}
         ],
+        "Prix": "11.00 €",
         "Base" : "Crème",
         "LienImage" : " "
     },
@@ -51,6 +55,7 @@
             { "Ingrédient" : "Tomates cerises"},
             { "Ingrédient" : "Olives"}
         ],
+        "Prix": "11.00 €",
         "Base" : "Crème",
         "LienImage" : " "
     },
@@ -62,6 +67,7 @@
             { "Ingrédient" : "Poulet Mariné au citron"},
             { "Ingrédient" : "Huile pimenté"}
         ],
+        "Prix": "11.00 €",
         "Base" : "Crème",
         "LienImage" : " "
     },
@@ -73,6 +79,7 @@
             { "Ingrédient" : "Aneth"}
         ],
         "Base" : "Crème",
+        "Prix": "11.50 €",
         "LienImage" : " "
     },
     {
@@ -84,6 +91,7 @@
             { "Ingrédient" : "Billes de mozarrela fraiches"}
         ],
         "Base" : "Tomate",
+        "Prix": "8.00 €",
         "LienImage" : " "
     },
     {
@@ -95,6 +103,7 @@
             { "Ingrédient" : "Huile d'olive"},
             { "Ingrédient" : "Olives"}
         ],
+        "Prix": "9.00 €",
         "Base" : "Tomate",
         "LienImage" : " "
     },
@@ -110,6 +119,7 @@
             { "Ingrédient" : "Olives"}
         ],
         "Base" : "Tomate",
+        "Prix": "9.50 €",
         "LienImage" : " "
     },
     {
@@ -122,6 +132,7 @@
             { "Ingrédient" : "Bille de mozzarella fraiches"}
         ],
         "Base" : "Tomate",
+        "Prix": "10.00 €",
         "LienImage" : " "
     },
     {
@@ -134,6 +145,7 @@
             { "Ingrédient" : "Olives"}
         ],
         "Base" : "Tomate",
+        "Prix": "10.50 €",
         "LienImage" : " "
     },
     {
@@ -148,6 +160,7 @@
             { "Ingrédient" : "Bille de mozzarella fraiches"}
         ],
         "Base" : "Tomate",
+        "Prix": "11.00 €",
         "LienImage" : " "
     },
     {
@@ -162,6 +175,7 @@
             { "Ingrédient" : "Sauce blanche maison"}
         ],
         "Base" : "Tomate",
+        "Prix": "11.00 €",
         "LienImage" : " "
     },
     {
@@ -177,6 +191,7 @@
             { "Ingrédient" : "Olives"}
         ],
         "Base" : "Tomate",
+        "Prix": "11.50 €",
         "LienImage" : " "
     },
     {
@@ -190,6 +205,7 @@
             { "Ingrédient" : "Bille de mozzarella fraiches"}
         ],
         "Base" : "Tomate",
+        "Prix": "11.50 €",
         "LienImage" : " "
     },
     {
@@ -205,6 +221,7 @@
             { "Ingrédient" : "Olives"}
         ],
         "Base" : "Tomate",
+        "Prix": "12.00 €",
         "LienImage" : " "
     }
 ]

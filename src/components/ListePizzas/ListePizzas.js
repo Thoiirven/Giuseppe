@@ -23,7 +23,7 @@ export const Titre2 = styled.h1`
 export const FlexContainer = styled.div`
     display : flex;
     flex-wrap: wrap;
-    padding: 0;
+    padding: auto;
     margin: auto;
     list-style: none;
 `;
@@ -31,24 +31,24 @@ export const FlexContainer = styled.div`
 export const FlexItem = styled.div`
     background:#ffffff;
     border: 3.8px solid #FF7902;
+    border-radius: 20px;
     margin:auto;
-    margin-bottom:0.5cm;
-    box-shadow: 2.5px 2.5px 2.5px #494949;
-    color: White;
+    margin-bottom:2cm;
+    box-shadow: 4.5px 4.5px 4.5px #494949;
+    color: rgb(20,135,56);
     Background-color: black;
     font-weight: bold;
     font-size: 16;
     transition-duration: 0.4s;
-    cursor: pointer;
     :hover {
-        background-color: White;
-        color: black;
+        background-color: rgb(150,150,150);
     }
+    width: 600px; 
+    height: 750px;
 `;
-export const FlexItemP = styled.p`
-    font-weight: bold;
-    font-size: 30px;
+export const FlexItemP = styled.h2`
     text-align: center;
+    color:rgb(215,14,24);
 `;
 export const FlexItemI = styled.p`
     font-weight: bold;
@@ -57,4 +57,10 @@ export const FlexItemI = styled.p`
     font-size: 16px;
     text-align: center;
 `;
-
+export const ImagePizza = styled.div`
+    display:flex;
+    margin:auto;
+    width: 550px; 
+    height: 550px;
+    background-size: cover;
+`;
