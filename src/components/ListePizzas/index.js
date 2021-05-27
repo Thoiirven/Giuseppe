@@ -37,7 +37,7 @@ class ListePizzas extends Component {
                         <Titre2>Nos pizzas disponibles avec une base {this.props.data}</Titre2>
                         
                         <FlexContainer>
-                            {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem><FlexItemP>{Pizzas.Nom} </FlexItemP> 
+                            {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem id="listePizzas"><FlexItemP>{Pizzas.Nom} </FlexItemP> 
                                 <ImagePizza>
                                     <img src={Pizzas.Image}/>
                                 </ImagePizza>

@@ -65,7 +65,7 @@ export const SousTitreCouleur = styled.div`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 0.75cm;
+    font-size: 3em;
     padding: 0.5cm;
 `;
 export const SousTitreCouleurListeL = styled.div`
@@ -82,7 +82,7 @@ export const BodyBouton = styled.button`
     border: 2px solid #FF7902;
     padding: 8px 16px;
     text-align: center;
-    font-size: 16px;
+    font-size: 50px;
     margin: 0.5cm;
     transition-duration: 0.4s;
     cursor: pointer;

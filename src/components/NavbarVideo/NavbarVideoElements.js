@@ -21,7 +21,7 @@ export const VIDEO = styled.div`
 export const TopNav = styled.div`
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
-    font-size: 0.5cm;
+    font-size: 2em;
     z-index : 1;
 `;
 
@@ -60,13 +60,13 @@ export const INTRO = styled.h2`
     color: #A8BBC1;
     z-index : 1;
     text-align: center;
-    font-size: 36;
+    font-size: 3em;
 `;
 
 export const TITRE = styled.h1`
     margin-top: 3;
     font-weight: normal;
-    font-size: 36;
+    font-size: 6em;
     color: #FFFFFF;
     z-index : 1;
     text-align: center;
@@ -82,5 +82,5 @@ export const Texte = styled.h3`
     color: #EAECEE ;
     z-index : 1;
     text-align: center;
-    font-size: 36;
+    font-size: 2em;
 `;

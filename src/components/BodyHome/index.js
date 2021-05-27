@@ -112,23 +112,22 @@ class BodyHome extends Component {
         return (
             
                 <Router forceRefresh={true}>
-                    <BodyHomeBody>
+                    <BodyHomeBody id="bodyhome" >
                         <PageBody>
-                            <ImageLogo>
+                            <ImageLogo id= "imagelogo">
                                 <img src={logo}/>
                             </ImageLogo>
                             <Titre2 id="texteDispo">{this.state.DisponibleTexte}</Titre2>
                             <Carte id="map" />
                             <SousTitre>Nous ne prenons aucune réservation via notre site.
                             Merci de nous contacter par téléphone.</SousTitre>
-                            <BodyBordure>
+                            <BodyBordure id="divjour">
                                 <Titre2Couleur>Voici où nous nous situons en fonction du jour</Titre2Couleur>
                                 
-                                <SousTitreCouleur>
-                                    <BodyBouton onClick={this.setJourEmplacement.bind(this,-1,this.state.AdresseEmplacement)}>Jour prédédent</BodyBouton>
+                                <SousTitreCouleur id= "soustitre">
+                                    <BodyBouton id="boutonJour" onClick={this.setJourEmplacement.bind(this,-1,this.state.AdresseEmplacement)}>Jour prédédent</BodyBouton>
                                         {getJourNom(this.state.JourEmplacement)}
-                                    <BodyBouton onClick={this.setJourEmplacement.bind(this,+1,this.state.AdresseEmplacement)}>Jour suivant</BodyBouton>
-                                   
+                                    <BodyBouton id="boutonJour" onClick={this.setJourEmplacement.bind(this,+1,this.state.AdresseEmplacement)}>Jour suivant</BodyBouton>
                                 </SousTitreCouleur>
                                 <SousTitre> 
                                     {this.state.AdresseEmplacement}

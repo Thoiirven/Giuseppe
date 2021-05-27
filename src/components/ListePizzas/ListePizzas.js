@@ -16,7 +16,7 @@ export const Titre2 = styled.h1`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 24;
+    font-size: 48px;
     padding: 1cm;
 `;
 
@@ -30,7 +30,7 @@ export const FlexContainer = styled.div`
 
 export const FlexItem = styled.div`
     background:#ffffff;
-    border: 3.8px solid #FF7902;
+    border: 3.8px solid white;
     border-radius: 20px;
     margin:auto;
     margin-bottom:2cm;
@@ -38,23 +38,20 @@ export const FlexItem = styled.div`
     color: rgb(20,135,56);
     Background-color: black;
     font-weight: bold;
-    font-size: 16;
-    transition-duration: 0.4s;
-    :hover {
-        background-color: rgb(150,150,150);
-    }
-    width: 600px; 
-    height: 750px;
+    width: 630px;
+    height:1300px;
+
 `;
 export const FlexItemP = styled.h2`
     text-align: center;
     color:rgb(215,14,24);
+    font-size: 14em;
 `;
 export const FlexItemI = styled.p`
     font-weight: bold;
     padding: 8px 16px;
     font-style: italic;
-    font-size: 16px;
+    font-size: 3em;
     text-align: center;
 `;
 export const ImagePizza = styled.div`

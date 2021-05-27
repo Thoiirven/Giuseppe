@@ -12,7 +12,7 @@ export const HeaderHome = styled.div`
 export const TopNav = styled.div`
     background-color: rgba(0, 0, 0);
     overflow: hidden;
-    font-size: 0.5cm;
+    font-size: 2em;
     z-index : 1;
 `;
 

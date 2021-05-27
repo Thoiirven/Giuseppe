@@ -11,3 +11,51 @@
       rgb(215,14,24) 80%,
       rgb(215,14,24) 100%);
     }
+    @media screen and (max-width: 767px){ 
+      #bodyhome
+      {
+        width :100% ;
+        padding :0px ;
+        margin:auto;
+      }
+      #imagelogo
+      {
+        width :100% ;
+        height: 100%;
+        padding :0px ;
+        margin:0;
+      }
+      #boutonJour
+      {
+        width :100% ;
+        padding: 0px;
+        font-size:2cm ;
+        margin: 0.5cm;
+      }
+      #soustitre
+      {
+        width :100% ;
+        padding :0px ;
+        font-size: 2cm;
+        margin:0;
+      }
+      #listePizzas
+      {
+        width :400px;
+        height: 400px;
+        padding :900px ;
+        font-size: 5em;
+        margin: auto;
+      }
+      #navbarvideo
+      {
+        width :100% ;
+        padding :0px ;
+        margin:auto;
+      }
+      #video
+      {
+        width:auto;
+        height:auto;
+      }
+    }

@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Rickon';
     src: url(${RickonTTF}) format('truetype');
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     font-display: auto;
   }

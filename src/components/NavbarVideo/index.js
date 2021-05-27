@@ -7,7 +7,7 @@ import video1 from '../../videos/video1.mp4';
 const NavbarVideo = () => {
     return (
         <>
-                <HeaderHome>
+                <HeaderHome id="navbarvideo">
                     <VIDEO>
                         <ReactPlayer width='100%' height='100%'
                             playing={true}

@@ -7,8 +7,8 @@ import {BrowserRouter as Router,Link} from "react-router-dom";
 const Navbar = () => {
     return (
         <>
-            <HeaderHome>
-                <TopNav>
+            <HeaderHome id="navbar">
+                <TopNav >
                     <Router forceRefresh={true}>
                         <Link to="/"><NavLogo>Giuseppe</NavLogo></Link>
                         <Link to="/Explore"><NavLinks>Liste Pizzas</NavLinks></Link>
