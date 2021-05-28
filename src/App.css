@@ -25,20 +25,6 @@
         padding :0px ;
         margin:0;
       }
-      #boutonJour
-      {
-        width :100% ;
-        padding: 0px;
-        font-size:2cm ;
-        margin: 0.5cm;
-      }
-      #soustitre
-      {
-        width :100% ;
-        padding :0px ;
-        font-size: 2cm;
-        margin:0;
-      }
       #listePizzas
       {
         width :400px;
@@ -57,5 +43,10 @@
       {
         width:auto;
         height:auto;
+      }
+      #divjour{
+        width :100% ;
+        padding :0px ;
+        margin:auto;
       }
     }

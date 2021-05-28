@@ -16,7 +16,7 @@ export const TopNav = styled.div`
     z-index : 1;
 `;
 
-export const NavLinks = styled.a`
+export const NavLinks = styled.div`
     float: right;
     color: #ffffff;
     text-align: center;
@@ -32,7 +32,7 @@ export const NavLinks = styled.a`
     }
 `;
 
-export const NavLogo = styled.a`
+export const NavLogo = styled.div`
     transition-duration: 0.4s;
     padding: 14px 16px;
     float: left;

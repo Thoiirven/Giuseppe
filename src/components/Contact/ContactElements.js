@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const BodyHomeBody = styled.body`
+export const BodyHomeBody = styled.div`
     width:1280px;
     height:900px;
     margin: auto;

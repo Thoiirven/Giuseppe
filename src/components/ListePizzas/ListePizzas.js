@@ -64,3 +64,7 @@ export const ImagePizza = styled.div`
     height: 550px;
     background-size: cover;
 `;
+export const Form = styled.form`
+    text-align: center;
+    font-size: 2em;
+`;

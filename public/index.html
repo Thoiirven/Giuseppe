@@ -8,8 +8,9 @@
         <!--Début affichage carte-->
         <script type="text/javascript">
         var X,Y,Adresse;
+        var coord= [];
         const date = new Date();
-        const Jour = date.getDay();
+        var Jour = date.getDay();
         if(Jour != 1 && Jour != 2){
 
             d3.json("/data/Emplacement.json", function (data) {
@@ -18,16 +19,19 @@
                         X = data[4].EmplacementCamion.X;
                         Y = data[4].EmplacementCamion.Y;
                         Adresse = data[4].EmplacementCamion.Adresse;
+                        coord = data[4].CoordonnéesLivraison;
                     }
                     else {
                         X = data[Jour - 3].EmplacementCamion.X;
                         Y = data[Jour - 3].EmplacementCamion.Y;
                         Adresse = data[Jour - 3].EmplacementCamion.Adresse;
+                        coord = data[Jour-3].CoordonnéesLivraison;
                     }
                 } else {
                 }
 
             });
+
                 window.onload = function() {
                 L.mapquest.key = 'o811g09pkEIyNtWWABQIU9T9FSgxcXAP';
         
@@ -49,6 +53,23 @@
                         size: 'lg'
                     }
                     }).addTo(map);
+                    var copie2=[];
+                    var copie=[];
+                    coord.forEach(function (element2) {
+                        copie2.push({ element2});
+                    });
+                    coord.map(function (element2) {
+                        return element2.Coordonnées.map(function (Emplacement) {
+                                var tampon = Emplacement[0];
+                                Emplacement[0] = Emplacement[1];
+                                Emplacement[1] = tampon;
+                                return Emplacement;
+                        })
+                    });
+                    
+                    coord.forEach(function (element2) {
+                        L.polygon(element2.Coordonnées, {color: 'blue'}).addTo(map);
+                    });                
                 }
         }
         

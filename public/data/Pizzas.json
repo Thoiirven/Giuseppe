@@ -223,5 +223,14 @@
         "Base" : "Tomate",
         "Prix": "12.00 €",
         "LienImage" : " "
+    },
+    {
+        "Nom": "La Noa",
+        "Ingrédients": [
+            { "Ingrédient" : "3 ingrédients au choix, puis mozarella et olives"}
+        ],
+        "Base" : "Tomate ou Crème",
+        "Prix": "12.50 €",
+        "LienImage" : " "
     }
 ]

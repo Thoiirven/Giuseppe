@@ -42,9 +42,9 @@ export const ImageLogo = styled.div`
 `;
 export const BodyBordure = styled.div`
     display:block;
-    border: 3.8px solid #FF7902;
-    margin-left :10%;
-    margin-right :10%;
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px #494949;
+    margin: auto;
     height: auto;
     background-color: white;
     z-index : 1;
@@ -66,15 +66,15 @@ export const SousTitreCouleur = styled.div`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 4em;
-    padding: 0.5cm;
+    font-size: 2em;
+    padding: 0.5em;
 `;
 export const SousTitreCouleurListeL = styled.div`
     color: rgb(193,193,193);
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 0cm;
 `;
 export const BodyBouton = styled.button`
