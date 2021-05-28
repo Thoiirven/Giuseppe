@@ -59,14 +59,14 @@ export const Titre2Couleur = styled.div`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 1cm;
+    font-size: 2em;
 `;
 export const SousTitreCouleur = styled.div`
     color: rgb(215,14,24);
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 4em;
     padding: 0.5cm;
 `;
 export const SousTitreCouleurListeL = styled.div`
@@ -74,7 +74,7 @@ export const SousTitreCouleurListeL = styled.div`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 0.5cm;
+    font-size: 1em;
     padding: 0cm;
 `;
 export const BodyBouton = styled.button`
@@ -83,7 +83,7 @@ export const BodyBouton = styled.button`
     border: 2px solid #FF7902;
     padding: 8px 16px;
     text-align: center;
-    font-size: 50px;
+    font-size: 1em;
     margin: 0.5cm;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -96,6 +96,6 @@ export const ListeLivraison = styled.div`
     color: rgb(193,193,193);
     z-index : 1;
     text-align: center;
-    font-size: 0.5cm;
+    font-size: 1.5em;
     padding: 0.5cm;
 `;
