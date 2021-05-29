@@ -13,7 +13,7 @@ const Contact = () => {
                     <ImageLogoFacebook>
                         <img src={logoF} />
                     </ImageLogoFacebook>
-                    <BodyInsta ><a href="https://www.facebook.com/giuseppe.pizza38270/">@giuseppe.38270</a> </BodyInsta>
+                    <BodyInsta ><a href="https://www.instagram.com/giuseppe.38270/">@giuseppe.38270</a> </BodyInsta>
                     <BodyFacebook><a href="https://www.facebook.com/giuseppe.pizza38270/">@giuseppe.pizza38270</a></BodyFacebook>
                     <BodyP></BodyP>
                     <BodyP>Numéro pour passer commande : 07 49 83 87 49</BodyP>

@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
-import { BodyHomeBody, PageBody, Titre2, Carte,ImageLogo,SousTitre,BodyBordure,Titre2Couleur,SousTitreCouleur,BodyBouton,ListeLivraison,SousTitreCouleurListeL} from './BodyHome';
+import { BodyHomeBody, PageBody, Titre2, Carte,ImageLogo,SousTitre,BodyBordure
+    ,Titre2Couleur,SousTitreCouleur,BodyBouton,ListeLivraison,SousTitreCouleurListeL
+    ,SousTitreCouleurVert} from './BodyHome';
 import {json,select} from 'd3';
 import logo from '../../images/LogoNatan.jpg';
 
@@ -123,7 +125,9 @@ class BodyHome extends Component {
                             Merci de nous contacter par téléphone.</SousTitre>
                             <BodyBordure id="divjour">
                                 <Titre2Couleur>Voici où nous nous situons en fonction du jour</Titre2Couleur>
-                                
+                                <SousTitreCouleurVert>
+                                    Horaire: 17h45-22h, livraison à partir de 20h
+                                </SousTitreCouleurVert>
                                 <SousTitreCouleur id= "soustitre">
                                     <BodyBouton id="boutonJour" onClick={this.setJourEmplacement.bind(this,-1,this.state.AdresseEmplacement)}>Jour prédédent</BodyBouton>
                                         {getJourNom(this.state.JourEmplacement)}

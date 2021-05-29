@@ -11,7 +11,7 @@ const Navbar = () => {
                 <TopNav >
                     <Router forceRefresh={true}>
                         <Link to="/"><NavLogo>Giuseppe</NavLogo></Link>
-                        <Link to="/Explore"><NavLinks>Liste Pizzas</NavLinks></Link>
+                        <Link to="/Explore"><NavLinks>La carte</NavLinks></Link>
                         <Link to="/A-propos"><NavLinks>A propos</NavLinks></Link>
                         <Link to="/Contact"><NavLinks>Contact</NavLinks></Link>
                     </Router>

@@ -69,6 +69,14 @@ export const SousTitreCouleur = styled.div`
     font-size: 2em;
     padding: 0.5em;
 `;
+export const SousTitreCouleurVert = styled.div`
+    color: rgb(20,135,56);
+    z-index : 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0.5em;
+`;
 export const SousTitreCouleurListeL = styled.div`
     color: rgb(193,193,193);
     z-index : 1;

@@ -18,7 +18,7 @@ const NavbarVideo = () => {
                     <TopNav>
                     <Router forceRefresh={true}>
                         <Link to="/"><NavLogo>Giuseppe</NavLogo></Link>
-                        <Link to="/Explore"><NavLinks>Liste Pizzas</NavLinks></Link>
+                        <Link to="/Explore"><NavLinks>La carte</NavLinks></Link>
                         <Link to="/A-propos"><NavLinks>A propos</NavLinks></Link>
                         <Link to="/Contact"><NavLinks>Contact</NavLinks></Link>
                     </Router>
@@ -26,7 +26,10 @@ const NavbarVideo = () => {
                     <INTRO>Introduction</INTRO>
                     <TITRE>Pizzeria Giuseppe</TITRE>
                     <Texte>
-                    "Camion de pizzas et spécialités italiennes. Natan et Florence vous accueillent dans leur foodtruck. Bellegarde poussieu, Assieu, Poncin, Sonnay et ses environs"
+                    "Camion de pizzas et spécialités italiennes. Natan et Florence vous 
+                    accueillent du mercredi au dimanche dans leur foodtruck. Situé dans l'Isère 
+                    nous faisons le tour des villages de Bellegarde poussieu, Assieu, Poncin,
+                     Sonnay et de leurs environs"
                     </Texte>
                 </HeaderHome>
         </>
