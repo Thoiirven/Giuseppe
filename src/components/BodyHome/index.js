@@ -84,6 +84,7 @@ class BodyHome extends Component {
         json("/data/Emplacement.json").then((value) => {
             var DisponibleTexte, Jour, Endroit;
             Jour = new Date().getDay();
+            Jour = 3;
             this.setState({ Jour: Jour });
             this.setState({ JourEmplacement: Jour });
             this.getJourEmplacement();

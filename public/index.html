@@ -4,13 +4,13 @@
         <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
         <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
         <script src="https://d3js.org/d3.v4.js"></script>
-         <!--Script bootstrap-->
         <!--Début affichage carte-->
         <script type="text/javascript">
         var X,Y,Adresse;
         var coord= [];
         const date = new Date();
         var Jour = date.getDay();
+        Jour=4;
         if(Jour != 1 && Jour != 2){
 
             d3.json("/data/Emplacement.json", function (data) {
@@ -40,7 +40,10 @@
                     layers: L.mapquest.tileLayer('map'),
                     zoom: 18
                 });
-        
+                /*map.load(function () {
+                        map.draw.circle([X, Y], 6, 'blue')
+                        map.fitBounds();
+                    });*/
                 map.addControl(L.mapquest.control());
                 L.mapquest.textMarker([X, Y], {
                     text: 'Giuseppe',
@@ -55,21 +58,20 @@
                     }).addTo(map);
                     var copie2=[];
                     var copie=[];
-                    coord.forEach(function (element2) {
-                        copie2.push({ element2});
-                    });
-                    coord.map(function (element2) {
-                        return element2.Coordonnées.map(function (Emplacement) {
-                                var tampon = Emplacement[0];
-                                Emplacement[0] = Emplacement[1];
-                                Emplacement[1] = tampon;
-                                return Emplacement;
-                        })
-                    });
+                    L.mapquest.textMarker([37.269586, 13.970953], {
+                    text: 'Giuseppe',
+                    subtext: Adresse ,
+                    position: 'right',
+                    type: 'marker',
+                    icon: {
+                        primaryColor: '#444444',
+                        secondaryColor: '#FFC400',
+                        size: 'lg'
+                    }
+                    }).addTo(map);
                     
-                    coord.forEach(function (element2) {
-                        L.polygon(element2.Coordonnées, {color: 'blue'}).addTo(map);
-                    });                
+                    
+                    L.circle([X, Y], { radius: 100 }).addTo(map);          
                 }
         }
         
