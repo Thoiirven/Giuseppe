@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-        <script src="https://d3js.org/d3.v4.js"></script>
-        <!--Début affichage carte-->
-        <script type="text/javascript">
-        var X,Y,Adresse;
-        var coord= [];
+
+<head>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!--Début affichage carte-->
+    <script type="text/javascript">
+        var X, Y, Adresse;
+        var coord = [];
+        var secret;
         const date = new Date();
         var Jour = date.getDay();
-        Jour=4;
-        if(Jour != 1 && Jour != 2){
+        if (Jour != 1 && Jour != 2) {
 
             d3.json("/data/Emplacement.json", function (data) {
                 if (Jour > 2 || Jour === 0) {
@@ -25,29 +26,25 @@
                         X = data[Jour - 3].EmplacementCamion.X;
                         Y = data[Jour - 3].EmplacementCamion.Y;
                         Adresse = data[Jour - 3].EmplacementCamion.Adresse;
-                        coord = data[Jour-3].CoordonnéesLivraison;
+                        coord = data[Jour - 3].CoordonnéesLivraison;
                     }
                 } else {
                 }
 
             });
 
-                window.onload = function() {
+            window.onload = function () {
                 L.mapquest.key = 'o811g09pkEIyNtWWABQIU9T9FSgxcXAP';
-        
+
                 var map = L.mapquest.map('map', {
                     center: [X, Y],
                     layers: L.mapquest.tileLayer('map'),
                     zoom: 18
                 });
-                /*map.load(function () {
-                        map.draw.circle([X, Y], 6, 'blue')
-                        map.fitBounds();
-                    });*/
                 map.addControl(L.mapquest.control());
                 L.mapquest.textMarker([X, Y], {
                     text: 'Giuseppe',
-                    subtext: Adresse ,
+                    subtext: Adresse,
                     position: 'right',
                     type: 'marker',
                     icon: {
@@ -55,38 +52,40 @@
                         secondaryColor: '#FFC400',
                         size: 'lg'
                     }
-                    }).addTo(map);
-                    var copie2=[];
-                    var copie=[];
-                    L.mapquest.textMarker([37.269586, 13.970953], {
-                    text: 'Giuseppe',
-                    subtext: Adresse ,
+                }).addTo(map);
+                var copie2 = [];
+                var copie = [];
+                
+                L.mapquest.textMarker([37.269586, 13.970953], {
+                    text: 'Adresse du grand-père de Natan',
+                    subtext: 'Le mot de passe est : 3718',
                     position: 'right',
                     type: 'marker',
                     icon: {
                         primaryColor: '#444444',
                         secondaryColor: '#FFC400',
-                        size: 'lg'
+                        size: 'sm'
                     }
-                    }).addTo(map);
-                    
-                    
-                    L.circle([X, Y], { radius: 100 }).addTo(map);          
-                }
+                }).addTo(map);
+
+                L.circle([X, Y], { radius: 2400 }).addTo(map);
+            }
         }
-        
-        </script>
-        <!--fin affichage carte-->
-        <meta charset="utf-8" />
-        <title>Giuseppe</title>
-    </head>
-    <body>
-        <div id="root"></div>
-    </body> 
-    <footer>
-        <div>
-          <div style="text-align: center;background-color: black;width:1280px;
+
+    </script>
+    <!--fin affichage carte-->
+    <meta charset="utf-8" />
+    <title>Giuseppe</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<footer>
+    <div>
+        <div style="text-align: center;background-color: black;width:1280px;
           height:40px;margin: auto; color:cornsilk;">WebSite by Christophe Marrel</div>
-        </div>
-    </footer>
+    </div>
+</footer>
+
 </html>

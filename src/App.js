@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import ListePizzas from './components/ListePizzas';
 import BodyHome from './components/BodyHome';
 import ChoixBasePizza from './components/ChoixBasePizza';
+import Secret from './components/Secret';
 import { createGlobalStyle } from 'styled-components';
 import RickonTTF from './Font/TheRickon.ttf';
 
@@ -35,6 +36,7 @@ export default function App() {
           <Route exact path="/Explore/Tomate" component={AffTomate}/>
           <Route exact path="/A-propos" component={Apropos}/>
           <Route exact path="/Contact" component={ContactF} />
+          <Route exact path="/Secret" component={AffSecret} />
         </Switch>
       </Router>
     </>
@@ -73,5 +75,11 @@ function AffTomate() {
   return (<React.Fragment>
     <Navbar />
     <ListePizzas data='Tomate'/>
+  </React.Fragment>);
+}
+function AffSecret() {
+  return (<React.Fragment>
+    <Navbar />
+    <Secret/>
   </React.Fragment>);
 }

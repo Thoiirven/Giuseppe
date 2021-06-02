@@ -1,10 +1,12 @@
 import React,{Component} from 'react';
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 import { BodyHomeBody, PageBody, Titre2, Carte,ImageLogo,SousTitre,BodyBordure
     ,Titre2Couleur,SousTitreCouleur,BodyBouton,ListeLivraison,SousTitreCouleurListeL
-    ,SousTitreCouleurVert} from './BodyHome';
-import {json,select} from 'd3';
+    ,SousTitreCouleurVert, Secret} from './BodyHome';
+import {json} from 'd3';
 import logo from '../../images/LogoNatan.jpg';
+
+
 
 function getJourNom(Date) {
     switch (Date) {
@@ -51,6 +53,7 @@ class BodyHome extends Component {
             }
             this.setState({ ListeLivraison: copie });
         });
+
     }
     setJourEmplacement(Param) {
         if(Param === -1 && this.state.JourEmplacement === 0){
@@ -84,7 +87,6 @@ class BodyHome extends Component {
         json("/data/Emplacement.json").then((value) => {
             var DisponibleTexte, Jour, Endroit;
             Jour = new Date().getDay();
-            Jour = 3;
             this.setState({ Jour: Jour });
             this.setState({ JourEmplacement: Jour });
             this.getJourEmplacement();
@@ -149,6 +151,7 @@ class BodyHome extends Component {
                                 </SousTitreCouleurListeL>
                             </BodyBordure>
                             <Carte id="map" />
+                            <Link to="/Secret"><Secret>Giuseppe</Secret></Link>
                     </PageBody>
                     </BodyHomeBody>
                 </Router>

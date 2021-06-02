@@ -107,3 +107,11 @@ export const ListeLivraison = styled.div`
     font-size: 1.5em;
     padding: 0.5cm;
 `;
+export const Secret = styled.div`
+overflow: hidden;
+background-color: #0000;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0);
+    float: left;
+    font-size: 1.5em;
+`;
