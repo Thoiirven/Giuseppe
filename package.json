@@ -3,22 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@blueprintjs/core": "^3.38.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "browserify": "^17.0.0",
     "browserify-fs": "^1.0.0",
     "d3": "^6.7.0",
-    "leaflet": "^1.7.1",
+    "mysql": "^2.18.1",
     "react": "^17.0.1",
-    "react-d3-library": "^1.1.8",
     "react-dom": "^17.0.1",
     "react-player": "^2.9.0",
     "react-responsive": "^8.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "^4.0.3",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +43,8 @@
   "repository": "https://github.com/Thoiirven/Giuseppe",
   "author": "MARREL Christophe",
   "license": "0",
-  "description": "Site pour l'entreprise Giuseppe"
+  "description": "Site pour l'entreprise Giuseppe",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
 }

@@ -76,7 +76,7 @@ export const TITRE = styled.h1`
 `;
 export const Texte = styled.h3`
     font-style: italic;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 15%;
     margin-right: 15%;
     color: #EAECEE ;

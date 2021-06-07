@@ -106,7 +106,7 @@ class Secret extends Component {
                     <PageBody>
                         <Titre2>Vous venez de découvrir l'existence d'un secret... Mais avez-vous bien regardé tout le site ?</Titre2>
                         <Form onSubmit={this.handleSubmit}>
-                        Donné le mot de passe dissimulé pour débloquer quelque chose :
+                        Donnez le mot de passe dissimulé pour débloquer quelque chose :
                             <label>
                                 
                                     <Textarea value={this.state.utilisateur} name="Nom utilisateur" onChange={this.handleChange} />
