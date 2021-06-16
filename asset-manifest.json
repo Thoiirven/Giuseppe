@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Giuseppe/static/css/main.87dbeabc.chunk.css",
-    "main.js": "/Giuseppe/static/js/main.c4af807a.chunk.js",
-    "main.js.map": "/Giuseppe/static/js/main.c4af807a.chunk.js.map",
-    "runtime-main.js": "/Giuseppe/static/js/runtime-main.f063751f.js",
-    "runtime-main.js.map": "/Giuseppe/static/js/runtime-main.f063751f.js.map",
-    "static/js/2.e48fb250.chunk.js": "/Giuseppe/static/js/2.e48fb250.chunk.js",
-    "static/js/2.e48fb250.chunk.js.map": "/Giuseppe/static/js/2.e48fb250.chunk.js.map",
-    "index.html": "/Giuseppe/index.html",
-    "static/css/main.87dbeabc.chunk.css.map": "/Giuseppe/static/css/main.87dbeabc.chunk.css.map",
-    "static/js/2.e48fb250.chunk.js.LICENSE.txt": "/Giuseppe/static/js/2.e48fb250.chunk.js.LICENSE.txt",
-    "static/media/Instagram.0963b7a5.png": "/Giuseppe/static/media/Instagram.0963b7a5.png",
-    "static/media/LogoNatan.7b553be5.jpg": "/Giuseppe/static/media/LogoNatan.7b553be5.jpg",
-    "static/media/TheRickon.f2033318.ttf": "/Giuseppe/static/media/TheRickon.f2033318.ttf",
-    "static/media/video1.a473fb1d.mp4": "/Giuseppe/static/media/video1.a473fb1d.mp4"
+    "main.css": "/Giuseppe.com/static/css/main.87dbeabc.chunk.css",
+    "main.js": "/Giuseppe.com/static/js/main.c4af807a.chunk.js",
+    "main.js.map": "/Giuseppe.com/static/js/main.c4af807a.chunk.js.map",
+    "runtime-main.js": "/Giuseppe.com/static/js/runtime-main.a5f08690.js",
+    "runtime-main.js.map": "/Giuseppe.com/static/js/runtime-main.a5f08690.js.map",
+    "static/js/2.0e75ae94.chunk.js": "/Giuseppe.com/static/js/2.0e75ae94.chunk.js",
+    "static/js/2.0e75ae94.chunk.js.map": "/Giuseppe.com/static/js/2.0e75ae94.chunk.js.map",
+    "index.html": "/Giuseppe.com/index.html",
+    "static/css/main.87dbeabc.chunk.css.map": "/Giuseppe.com/static/css/main.87dbeabc.chunk.css.map",
+    "static/js/2.0e75ae94.chunk.js.LICENSE.txt": "/Giuseppe.com/static/js/2.0e75ae94.chunk.js.LICENSE.txt",
+    "static/media/Instagram.0963b7a5.png": "/Giuseppe.com/static/media/Instagram.0963b7a5.png",
+    "static/media/LogoNatan.7b553be5.jpg": "/Giuseppe.com/static/media/LogoNatan.7b553be5.jpg",
+    "static/media/TheRickon.f2033318.ttf": "/Giuseppe.com/static/media/TheRickon.f2033318.ttf",
+    "static/media/video1.a473fb1d.mp4": "/Giuseppe.com/static/media/video1.a473fb1d.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.f063751f.js",
-    "static/js/2.e48fb250.chunk.js",
+    "static/js/runtime-main.a5f08690.js",
+    "static/js/2.0e75ae94.chunk.js",
     "static/css/main.87dbeabc.chunk.css",
     "static/js/main.c4af807a.chunk.js"
   ]
