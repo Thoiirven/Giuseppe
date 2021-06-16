@@ -1,4 +1,5 @@
 {
+  "homepage": "http://thoiirven.github.io/Giuseppe",
   "name": "Giuseppe",
   "version": "0.0.1",
   "private": true,
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
   "license": "0",
   "description": "Site pour l'entreprise Giuseppe",
   "devDependencies": {
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "gh-pages": "^3.2.1"
   }
 }
