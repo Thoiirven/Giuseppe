@@ -1,0 +1,85 @@
+[
+    {
+        "Jour": "Mercredi",
+        "EmplacementCamion": {
+            "Ville": "Assieu",
+            "Adresse": "25 Rue du Trievoz (Parking Bar-Tabac)",
+            "Duree": "16h30-18h",
+            "X": 45.40617156871214,
+            "Y": 4.862598452985603
+        },
+        "Livraison": [
+            {"Ville": "Assieu"},
+            {"Ville": "St-Romain-De-Surieu"}
+        ]
+    },
+    {
+        "Jour": "Jeudi",
+        "EmplacementCamion": {
+            "Ville": "Bellegarde-Poussieu",
+            "Adresse": "435 Route de Pré Gelé",
+            "Duree": "16h30-18h",
+            "X": 45.38427759573572,
+            "Y": 4.95354021920324
+        },
+        "Livraison": [
+            {"Ville": "Bellegarde-Poussieu"},
+            {"Ville": "Sonnay"},
+            {"Ville": "Pact"},
+            {"Ville": "Moissieu-Sur-Dolon"},
+            {"Ville": "La Chapelle de Surieu"}
+        ]
+    },
+    {
+        "Jour": "Vendredi",
+        "EmplacementCamion": {
+            "Ville": "Poncin",
+            "Adresse": "Route de la Chapelle (Parking Coccinelle)",
+            "Duree": "16h30-18h",
+            "X": 45.38265402899454,
+            "Y": 4.842748200394087
+        },
+        "Livraison": [
+            {"Ville": "Ville sous Anjou"},
+            {"Ville": "Assieu"},
+            {"Ville": "St-Romain-De-Surieu"},
+            {"Ville": "Le Péroud"},
+            {"Ville": "Les Chapeaux"},
+            {"Ville": "L'enclos"},
+            {"Ville": "Les Liouds"},
+            {"Ville": "Les Molles"},
+            {"Ville": "Poncin"}
+        ]
+    },
+    {
+        "Jour": "Samedi",
+        "EmplacementCamion": {
+            "Ville": "Assieu",
+            "Adresse": "25 Rue du Trievoz (Parking Bar-Tabac)",
+            "Duree": "16h30-18h",
+            "X": 45.40617156871214,
+            "Y": 4.862598452985603
+        },
+        "Livraison": [
+            {"Ville": "Assieu"},
+            {"Ville": "St-Romain-De-Surieu"}
+        ]
+    },
+    {
+        "Jour": "Dimanche",
+        "EmplacementCamion": {
+            "Ville": "Bellegarde-Poussieu",
+            "Adresse": "435 Route de Pré Gelé",
+            "Duree": "16h30-18h",
+            "X": 45.38427759573572,
+            "Y": 4.95354021920324
+        },
+        "Livraison": [
+            {"Ville": "Bellegarde-Poussieu"},
+            {"Ville": "Sonnay"},
+            {"Ville": "Pact"},
+            {"Ville": "Moissieu-Sur-Dolon"},
+            {"Ville": "La Chapelle de Surieu"}
+        ]
+    }
+]
