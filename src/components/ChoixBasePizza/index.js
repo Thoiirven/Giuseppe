@@ -26,12 +26,12 @@ class ChoixBasePizza extends Component {
     render() {
         return (
             <>
-                <BodyHomeBody>
-                    <BodyDiv>
+                <BodyHomeBody id="Body">
+                    <BodyDiv id="BodyBouton">
                         <BodyP>Quelle base pour votre Pizza voulez-vous ?</BodyP>
                         <Router forceRefresh={true}>
-                            <Link to="/Explore/Creme"><BodyBcreme>Liste avec une base crème</BodyBcreme></Link>
-                            <Link to="/Explore/Tomate"><BodyBtomate>Liste avec une base tomate</BodyBtomate></Link>
+                            <Link to="/Explore/Creme"><BodyBcreme id = "BoutonPizzas">Liste avec une base crème</BodyBcreme></Link>
+                            <Link to="/Explore/Tomate"><BodyBtomate id = "BoutonPizzas">Liste avec une base tomate</BodyBtomate></Link>
                         </Router>
                     </BodyDiv>
                     <FlexContainer>

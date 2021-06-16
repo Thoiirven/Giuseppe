@@ -21,7 +21,7 @@ export const BodyBcreme = styled.button`
     border-radius: 20%;
     color: black;
     border: 2px solid #555555;
-    padding: 16px 32px;
+    padding: 0.6em 2.2em;
     text-align: center;
     font-size: 2em;
     margin: 1em;
@@ -38,7 +38,7 @@ export const BodyBtomate = styled.button`
     border-radius: 20%;
     color: black;
     border: 2px solid #555555;
-    padding: 16px 32px;
+    padding: 0.6em 2.2em;
     text-align: center;
     font-size: 2em;
     margin: 1em;

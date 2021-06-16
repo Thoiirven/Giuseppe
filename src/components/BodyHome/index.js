@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {BrowserRouter as Router, Link} from "react-router-dom";
 import { BodyHomeBody, PageBody, Titre2, Carte,ImageLogo,SousTitre,BodyBordure
     ,Titre2Couleur,SousTitreCouleur,BodyBouton,ListeLivraison,SousTitreCouleurListeL
-    ,SousTitreCouleurVert, Secret} from './BodyHome';
+    ,SousTitreCouleurVert, Secret, Actualite, BoutonActualiteDroite, BoutonActualiteGauche} from './BodyHome';
 import {json} from 'd3';
 import logo from '../../images/LogoNatan.jpg';
 
@@ -124,6 +124,12 @@ class BodyHome extends Component {
                             </ImageLogo>
                             <Titre2 id="texteDispo">{this.state.DisponibleTexte}</Titre2>
                             
+                            <Actualite> Actualite
+                                <BoutonActualiteGauche>'{'<'}'</BoutonActualiteGauche>
+                                <BoutonActualiteDroite>'{'>'}'</BoutonActualiteDroite>
+                            </Actualite>
+
+
                             <SousTitre>Nous ne prenons aucune réservation via notre site.
                             Merci de nous contacter par téléphone.</SousTitre>
                             <BodyBordure id="divjour">

@@ -16,8 +16,8 @@ export const Titre2 = styled.h1`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 48px;
-    padding: 1cm;
+    font-size: 4.5em;
+    padding: 1em;
 `;
 
 export const FlexContainer = styled.div`
@@ -33,13 +33,13 @@ export const FlexItem = styled.div`
     border: 3.8px solid white;
     border-radius: 20px;
     margin:auto;
-    margin-bottom:2cm;
+    margin-bottom:2em;
     box-shadow: 4.5px 4.5px 4.5px #494949;
     color: rgb(20,135,56);
     Background-color: black;
     font-weight: bold;
     :hover {
-        background-color: #BEBEBE;
+        background-color: #2B2B2B;
     }
     width: 630px;
     height:1300px;
@@ -66,5 +66,11 @@ export const ImagePizza = styled.div`
 `;
 export const Form = styled.form`
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
+`;
+export const Input = styled.input`
+    font-size: 1em;   
+`;
+export const Select = styled.select`
+    font-size: 1em;
 `;

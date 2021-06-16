@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
-import { BodyHomeBody, PageBody, Titre2, FlexContainer, FlexItem, FlexItemP,FlexItemI,ImagePizza,Form } from './ListePizzas';
+import { BodyHomeBody, PageBody, Titre2, FlexContainer, FlexItem, FlexItemP,FlexItemI,ImagePizza,Form, Input, Select } from './ListePizzas';
 import { json } from 'd3';
 import logo from '../../images/LogoNatan.jpg';
 class ListePizzas extends Component {
@@ -72,13 +72,13 @@ class ListePizzas extends Component {
                         <Form onSubmit={this.handleSubmit}>
                             <label>
                                 Choisissez l'ingrédient que vous ne voulez pas avoir dans votre Pizza :
-                                <select value={this.state.value[0]}  onChange={this.handleChange}>
+                                <Select value={this.state.value[0]}  onChange={this.handleChange}>
                                     <option selected value="Aucun élément choisi">Aucun</option>
                                     <option value="viande">Viande</option>
                                     <option value="Poivrons confits">Poivrons</option>
-                                </select>
+                                </Select>
                             </label>
-                            <input type="submit" value="Envoyer" />
+                            <Input type="submit" value="Envoyer" />
                         </Form>
                         <FlexContainer>
                             {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem id="listePizzas"><FlexItemP>{Pizzas.Nom} </FlexItemP>

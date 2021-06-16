@@ -4,15 +4,11 @@ export const HeaderHome = styled.div`
     width:1280px;
     height:720px;
     margin:auto;
-    @media screen and (max-width: 960px){
-        transition: 0.8s all ease;
-    }
+   
 `;
 
 export const VIDEO = styled.div`
     display:block;
-    width:1280;
-    height:720;
     position: absolute;
     filter: brightness(.3);
     z-index: -1;
@@ -29,7 +25,7 @@ export const NavLinks = styled.div`
     float: right;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.4em 0.6em;
     text-decoration: none;
     background-color: #0000;
     cursor: pointer;
@@ -42,7 +38,7 @@ export const NavLinks = styled.div`
 `;
 
 export const NavLogo = styled.div`
-    padding: 14px 16px;
+    padding: 0.4em 0.6em;
     float: left;
     color: #FFFFFF;
     text-decoration: none;
@@ -56,7 +52,7 @@ export const NavLogo = styled.div`
 `;
 
 export const INTRO = styled.h2`
-    margin-top: 10%;
+    margin-top: 1em;
     color: #A8BBC1;
     z-index : 1;
     text-align: center;
