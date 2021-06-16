@@ -16,7 +16,7 @@ export const Titre2 = styled.h1`
     z-index : 1;
     text-align: center;
     font-weight: bold;
-    font-size: 4.5em;
+    font-size: 4em;
     padding: 1em;
 `;
 
@@ -66,7 +66,7 @@ export const ImagePizza = styled.div`
 `;
 export const Form = styled.form`
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 `;
 export const Input = styled.input`
     font-size: 1em;   

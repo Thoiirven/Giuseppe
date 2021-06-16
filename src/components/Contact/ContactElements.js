@@ -3,18 +3,18 @@ import styled from 'styled-components';
 
 export const BodyHomeBody = styled.div`
     width:1280px;
-    height:900px;
+    height:1000px;
     margin: auto;
     background-color: #ffffff;
     z-index : 1;
 `;
 export const BodyDiv = styled.div`
-    padding:1cm;
+    padding:1em;
 `;
 export const BodyP = styled.p`
-    padding: 1cm;;
+    padding: 1em;;
     width: 100%;
-    font-size:1cm;
+    font-size:2em;
     text-align:center;
     z-index : 1;
 `;
@@ -39,7 +39,7 @@ export const BodyInsta = styled.div`
     margin-right:575px;
     margin-top: 20px;
     margin-left: 300px;
-    font-size:1cm;
+    font-size:2em;
     z-index : 1;
     transition-duration: 0.4s;
     :hover {
@@ -52,7 +52,7 @@ export const BodyFacebook = styled.div`
     margin-right:500px;
     margin-top: 40px;
     margin-left: 300px;
-    font-size:1cm;
+    font-size:2em;
     z-index : 1;
     transition-duration: 0.4s;
     :hover {

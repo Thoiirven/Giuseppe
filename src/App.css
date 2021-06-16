@@ -24,8 +24,8 @@
       }
       #video
       {
-        min-width: 100%;
-        min-height: 100%;
+        width: 1280px;
+        height: auto;
       }
       #listePizzas{
         width :100%;
@@ -40,6 +40,14 @@
       }
       #BodyBouton{
         height:1000px;
-        
+      }
+      #Titre{
+        font-size: 5em;
+      }
+      #SousTitre{
+        font-size: 4em;
+      }
+      #Nav{
+        font-size: 2em;
       }
     }

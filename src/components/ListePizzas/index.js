@@ -68,8 +68,8 @@ class ListePizzas extends Component {
             <Router forceRefresh={true}>
                 <BodyHomeBody>
                     <PageBody>
-                        <Titre2>Nos pizzas disponibles avec une base {this.props.data}</Titre2>
-                        <Form onSubmit={this.handleSubmit}>
+                        <Titre2 id ="Titre">Nos pizzas disponibles avec une base {this.props.data}</Titre2>
+                        <Form onSubmit={this.handleSubmit} id="SousTitre">
                             <label>
                                 Choisissez l'ingrédient que vous ne voulez pas avoir dans votre Pizza :
                                 <Select value={this.state.value[0]}  onChange={this.handleChange}>

@@ -25,7 +25,7 @@ export const NavLinks = styled.div`
     float: right;
     color: #ffffff;
     text-align: center;
-    padding: 0.4em 0.6em;
+    padding: 14px 16px;
     text-decoration: none;
     background-color: #0000;
     cursor: pointer;
@@ -38,7 +38,7 @@ export const NavLinks = styled.div`
 `;
 
 export const NavLogo = styled.div`
-    padding: 0.4em 0.6em;
+    padding: 14px 16px;
     float: left;
     color: #FFFFFF;
     text-decoration: none;

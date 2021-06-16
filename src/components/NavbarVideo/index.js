@@ -8,7 +8,7 @@ const NavbarVideo = () => {
     return (
         <>
                 <HeaderHome id="navbarvideo">
-                    <VIDEO>
+                    <VIDEO id="video">
                         <ReactPlayer width='100%' height='100%'
                             playing={true}
                             loop={true}
@@ -17,10 +17,10 @@ const NavbarVideo = () => {
                     </VIDEO>
                     <TopNav>
                     <Router forceRefresh={true}>
-                        <Link to="/"><NavLogo>Giuseppe</NavLogo></Link>
-                        <Link to="/Explore"><NavLinks>La carte</NavLinks></Link>
-                        <Link to="/A-propos"><NavLinks>A propos</NavLinks></Link>
-                        <Link to="/Contact"><NavLinks>Contact</NavLinks></Link>
+                        <Link to="/"><NavLogo id = "Nav">Giuseppe</NavLogo></Link>
+                        <Link to="/Explore"><NavLinks id = "Nav">La carte</NavLinks></Link>
+                        <Link to="/A-propos"><NavLinks id = "Nav">A propos</NavLinks></Link>
+                        <Link to="/Contact"><NavLinks id = "Nav">Contact</NavLinks></Link>
                     </Router>
                     </TopNav>
                     <INTRO>Introduction</INTRO>

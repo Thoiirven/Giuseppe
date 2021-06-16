@@ -1,5 +1,4 @@
 {
-  "homepage": "http://thoiirven.github.io/Giuseppe",
   "name": "Giuseppe",
   "version": "0.0.1",
   "private": true,
@@ -8,7 +7,7 @@
     "browserify-fs": "^1.0.0",
     "d3": "^6.7.0",
     "mysql": "^2.18.1",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-dom": "^17.0.1",
     "react-player": "^2.9.0",
     "react-responsive": "^8.2.0",
@@ -20,9 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
