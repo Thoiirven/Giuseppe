@@ -89,7 +89,7 @@ export const BodyBouton = styled.button`
     background-color: white;
     color: black;
     border: 0.2em solid #FF7902;
-    padding: 0.8em 1.6em;
+    padding: 0.8em 1.4em;
     text-align: center;
     font-size: 1em;
     margin: 0.5em;

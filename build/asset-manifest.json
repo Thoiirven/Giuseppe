@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Giuseppe.com/static/css/main.87dbeabc.chunk.css",
-    "main.js": "/Giuseppe.com/static/js/main.c4af807a.chunk.js",
-    "main.js.map": "/Giuseppe.com/static/js/main.c4af807a.chunk.js.map",
-    "runtime-main.js": "/Giuseppe.com/static/js/runtime-main.a5f08690.js",
-    "runtime-main.js.map": "/Giuseppe.com/static/js/runtime-main.a5f08690.js.map",
-    "static/js/2.0e75ae94.chunk.js": "/Giuseppe.com/static/js/2.0e75ae94.chunk.js",
-    "static/js/2.0e75ae94.chunk.js.map": "/Giuseppe.com/static/js/2.0e75ae94.chunk.js.map",
-    "index.html": "/Giuseppe.com/index.html",
-    "static/css/main.87dbeabc.chunk.css.map": "/Giuseppe.com/static/css/main.87dbeabc.chunk.css.map",
-    "static/js/2.0e75ae94.chunk.js.LICENSE.txt": "/Giuseppe.com/static/js/2.0e75ae94.chunk.js.LICENSE.txt",
-    "static/media/Instagram.0963b7a5.png": "/Giuseppe.com/static/media/Instagram.0963b7a5.png",
-    "static/media/LogoNatan.7b553be5.jpg": "/Giuseppe.com/static/media/LogoNatan.7b553be5.jpg",
-    "static/media/TheRickon.f2033318.ttf": "/Giuseppe.com/static/media/TheRickon.f2033318.ttf",
-    "static/media/video1.a473fb1d.mp4": "/Giuseppe.com/static/media/video1.a473fb1d.mp4"
+    "main.css": "/static/css/main.87dbeabc.chunk.css",
+    "main.js": "/static/js/main.59e9d305.chunk.js",
+    "main.js.map": "/static/js/main.59e9d305.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9298826a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9298826a.js.map",
+    "static/js/2.283da4db.chunk.js": "/static/js/2.283da4db.chunk.js",
+    "static/js/2.283da4db.chunk.js.map": "/static/js/2.283da4db.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.87dbeabc.chunk.css.map": "/static/css/main.87dbeabc.chunk.css.map",
+    "static/js/2.283da4db.chunk.js.LICENSE.txt": "/static/js/2.283da4db.chunk.js.LICENSE.txt",
+    "static/media/Instagram.0963b7a5.png": "/static/media/Instagram.0963b7a5.png",
+    "static/media/LogoNatan.7b553be5.jpg": "/static/media/LogoNatan.7b553be5.jpg",
+    "static/media/TheRickon.f2033318.ttf": "/static/media/TheRickon.f2033318.ttf",
+    "static/media/video1.a473fb1d.mp4": "/static/media/video1.a473fb1d.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5f08690.js",
-    "static/js/2.0e75ae94.chunk.js",
+    "static/js/runtime-main.9298826a.js",
+    "static/js/2.283da4db.chunk.js",
     "static/css/main.87dbeabc.chunk.css",
-    "static/js/main.c4af807a.chunk.js"
+    "static/js/main.59e9d305.chunk.js"
   ]
 }
