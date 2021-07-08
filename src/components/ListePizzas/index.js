@@ -82,7 +82,7 @@ class ListePizzas extends Component {
                         </Form>
                         <FlexContainer>
                             {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem id="listePizzas"><FlexItemP>{Pizzas.Nom} </FlexItemP>
-                                <ImagePizza>
+                                <ImagePizza id="imagelogo">
                                     <img src={Pizzas.Image} />
                                 </ImagePizza>
                                 <FlexItemI>Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-" + Ingred.Ingrédient + " "))}</FlexItemI>

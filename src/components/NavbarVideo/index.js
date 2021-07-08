@@ -26,7 +26,7 @@ const NavbarVideo = () => {
                     <INTRO>Introduction</INTRO>
                     <TITRE>Pizzeria Giuseppe</TITRE>
                     <Texte>
-                    "Camion de pizzas et spécialités italiennes. Natan et Florence vous 
+                    "Camion de pizzas et de spécialités italiennes. Natan et Florence vous 
                     accueillent du mercredi au dimanche dans leur foodtruck. Situé dans l'Isère 
                     nous faisons le tour des villages de Bellegarde poussieu, Assieu, Poncin,
                      Sonnay et de leurs environs"

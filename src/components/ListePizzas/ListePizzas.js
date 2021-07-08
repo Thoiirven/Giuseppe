@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const BodyHomeBody = styled.div`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black ,-4.5px -4.5px 4.5px black ;
     width:1280px;
     height:auto;
     margin:auto;
@@ -39,7 +41,7 @@ export const FlexItem = styled.div`
     Background-color: black;
     font-weight: bold;
     :hover {
-        background-color: #2B2B2B;
+        background-color: #BEBEBE;
     }
     width: 630px;
     height:1300px;
@@ -58,11 +60,11 @@ export const FlexItemI = styled.p`
     text-align: center;
 `;
 export const ImagePizza = styled.div`
-    display:flex;
-    margin:auto;
+    display: flex;
+    margin : auto;
     width: 550px; 
     height: 550px;
-    background-size: cover;
+    justify-content:center;
 `;
 export const Form = styled.form`
     text-align: center;

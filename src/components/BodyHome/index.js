@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import {BrowserRouter as Router, Link} from "react-router-dom";
 import { BodyHomeBody, PageBody, Titre2, Carte,ImageLogo,SousTitre,BodyBordure
-    ,Titre2Couleur,SousTitreCouleur,BodyBouton,ListeLivraison,SousTitreCouleurListeL
-    ,SousTitreCouleurVert, Secret, Actualite, BoutonActualiteDroite, BoutonActualiteGauche} from './BodyHome';
+    ,Titre2Couleur,SousTitreBoutonJour,BodyBouton,ListeLivraison,SousTitreCouleurListeL
+    ,SousTitreCouleurVert, Secret, SousTitreRouge} from './BodyHome';
 import {json} from 'd3';
 import logo from '../../images/LogoNatan.jpg';
 
@@ -123,25 +123,21 @@ class BodyHome extends Component {
                                 <img src={logo}/>
                             </ImageLogo>
                             <Titre2 id="texteDispo">{this.state.DisponibleTexte}</Titre2>
+                    <div id="insta"></div>
                             
-                            <Actualite> Actualite
-                                <BoutonActualiteGauche>'{'<'}'</BoutonActualiteGauche>
-                                <BoutonActualiteDroite>'{'>'}'</BoutonActualiteDroite>
-                            </Actualite>
 
-
-                            <SousTitre>Nous ne prenons aucune réservation via notre site.
-                            Merci de nous contacter par téléphone.</SousTitre>
+                            <SousTitreRouge>Nous ne prenons aucune réservation via notre site.
+                            Merci de nous contacter par téléphone.</SousTitreRouge>
                             <BodyBordure id="divjour">
                                 <Titre2Couleur>Voici où nous nous situons en fonction du jour</Titre2Couleur>
                                 <SousTitreCouleurVert>
                                     Horaire: 17h45-22h, livraison à partir de 20h
                                 </SousTitreCouleurVert>
-                                <SousTitreCouleur id= "soustitre">
+                                <SousTitreBoutonJour id= "soustitre">
                                     <BodyBouton id="boutonJour" onClick={this.setJourEmplacement.bind(this,-1,this.state.AdresseEmplacement)}>Jour prédédent</BodyBouton>
                                         {getJourNom(this.state.JourEmplacement)}
                                     <BodyBouton id="boutonJour" onClick={this.setJourEmplacement.bind(this,+1,this.state.AdresseEmplacement)}>Jour suivant</BodyBouton>
-                                </SousTitreCouleur>
+                                </SousTitreBoutonJour>
                                 <SousTitre> 
                                     {this.state.AdresseEmplacement}
                                     

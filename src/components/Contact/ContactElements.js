@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 
 export const BodyHomeBody = styled.div`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black ,-4.5px -4.5px 4.5px black ;
     width:1280px;
     height:1000px;
     margin: auto;

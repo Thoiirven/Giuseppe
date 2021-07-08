@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const BodyHomeBody = styled.div`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black ,-4.5px -4.5px 4.5px black ;
     width:1280px;
     height:auto;
     margin: auto;
@@ -9,7 +11,7 @@ export const BodyHomeBody = styled.div`
 `;
 export const BodyDiv = styled.div`
     padding: 1em;
-    height:500px;
+    height:600px;
 `;
 export const BodyP = styled.p`
     margin-top: 2em;
@@ -87,9 +89,79 @@ export const FlexItemI = styled.p`
     text-align: center;
 `;
 export const ImagePizza = styled.div`
-    display:flex;
-    margin:auto;
+    display: flex;
+    margin : auto;
     width: 550px; 
     height: 550px;
-    background-size: cover;
+    justify-content:center;
+`;
+export const Modal= styled.div`
+    font-size: 1.2em;
+`;
+export const Header= styled.p`
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+`;
+export const Content= styled.div`
+    width: 100%;
+    
+    padding: 10px 5px;
+`;
+export const Action= styled.div`
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+`;
+export const Close= styled.button`
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 10px;
+    font-size: 2.4em;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    :hover {
+        background-color: red;
+        color: white;
+    }
+`;
+export const BodyBouton = styled.button`
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 4em;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    :hover {
+        background-color: rgb(20,135,56);
+        color: white;
+    }
+`;
+export const BoutonFermer = styled.button`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    :hover {
+        background-color: red;
+        color: white;
+    }
 `;

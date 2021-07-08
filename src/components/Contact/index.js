@@ -16,7 +16,7 @@ const Contact = () => {
                     <BodyInsta ><a href="https://www.instagram.com/giuseppe.38270/">@giuseppe.38270</a> </BodyInsta>
                     <BodyFacebook><a href="https://www.facebook.com/giuseppe.pizza38270/">@giuseppe.pizza38270</a></BodyFacebook>
                     <BodyP></BodyP>
-                    <BodyP id="SousTitre">Numéro pour passer commande : 07 49 83 87 49</BodyP>
+                    <BodyP id="SousTitre">Numéro pour passer commande : 0749838749</BodyP>
                     <BodyP id="SousTitre">Pour tout contact professionnel : giuseppe38270@gmail.com</BodyP>
                 
             </BodyDiv>

@@ -5,6 +5,7 @@
     font-family: 'Encode Sans Expanded', sans-serif;
   }
   :root {
+    
       background:linear-gradient(to right,
       rgb(20,135,56) 2%,
       rgb(20,135,56) 20%,
@@ -28,7 +29,7 @@
         height: auto;
       }
       #listePizzas{
-        width :100%;
+        width :1280px;
         height: auto;
       }
       #Body{
@@ -49,5 +50,11 @@
       }
       #Nav{
         font-size: 2em;
+      }
+      #texte
+      {
+        width :100% ;
+        height: 100%;
+        font-size: 4em;
       }
     }

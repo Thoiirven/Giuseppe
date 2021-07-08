@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const BodyHomeBody = styled.div`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black ,-4.5px -4.5px 4.5px black ;
     width:1280px;
     height:auto;
     margin:auto;
@@ -26,6 +28,14 @@ export const SousTitre = styled.div`
     font-size: 1.5em;
     padding: 1em;
 `;
+export const SousTitreRouge = styled.div`
+    color:rgb(215,14,24);
+    z-index : 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+`;
 export const Carte = styled.div`
     margin : auto;
     width: 100%; 
@@ -43,7 +53,7 @@ export const ImageLogo = styled.div`
 export const BodyBordure = styled.div`
     display:block;
     border: 3.8px solid black;
-    box-shadow: 4.5px 4.5px 4.5px #494949;
+    box-shadow: 4.5px 4.5px 4.5px black;
     margin: auto;
     height: auto;
     background-color: white;
@@ -61,8 +71,7 @@ export const Titre2Couleur = styled.div`
     font-weight: bold;
     font-size: 2em;
 `;
-export const SousTitreCouleur = styled.div`
-    color: rgb(215,14,24);
+export const SousTitreBoutonJour = styled.div`
     z-index : 1;
     text-align: center;
     font-weight: bold;
@@ -88,7 +97,7 @@ export const SousTitreCouleurListeL = styled.div`
 export const BodyBouton = styled.button`
     background-color: white;
     color: black;
-    border: 0.2em solid #FF7902;
+    border: 0.2px solid #FF7902;
     padding: 0.8em 1.4em;
     text-align: center;
     font-size: 1em;
@@ -114,49 +123,4 @@ export const Secret = styled.div`
     color:rgba(0, 0, 0, 0);
     float: left;
     font-size: 1.5em;
-`;
-export const Actualite = styled.div`
-    background-color: #11111;
-    text-decoration: none;
-    filter: brightness(.3);
-    height: 22em;
-    display:block;
-    border: 3.8px solid black;
-    box-shadow: 4.5px 4.5px 4.5px #494949;
-    margin: auto;
-    font-size: 1.5em;
-`;
-export const BoutonActualiteGauche = styled.button`
-text-decoration: none;
-height: 100%;
-width:5%;
-    background-color: white;
-    color: black;
-    padding: 8px 16px;
-    text-align: center;
-    font-size: 1em;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    float : left;
-    :hover {
-        background-color: rgb(20,135,56);
-        color: white;
-    }
-`;
-export const BoutonActualiteDroite = styled.button`
-text-decoration: none;
-height: 100%;
-width:5%;
-    background-color: white;
-    color: black;
-    padding: 8px 16px;
-    text-align: center;
-    font-size: 1em;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    float: right;
-    :hover {
-        background-color: rgb(20,135,56);
-        color: white;
-    }
 `;

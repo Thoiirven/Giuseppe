@@ -18,7 +18,6 @@ export const TopNav = styled.div`
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
     font-size: 2em;
-    z-index : 1;
 `;
 
 export const NavLinks = styled.div`
@@ -54,7 +53,6 @@ export const NavLogo = styled.div`
 export const INTRO = styled.h2`
     margin-top: 1em;
     color: #A8BBC1;
-    z-index : 1;
     text-align: center;
     font-size: 3em;
 `;
@@ -64,7 +62,6 @@ export const TITRE = styled.h1`
     font-weight: normal;
     font-size: 6em;
     color: #FFFFFF;
-    z-index : 1;
     text-align: center;
     align-items: center;
     font-family: Roboto;
@@ -76,7 +73,6 @@ export const Texte = styled.h3`
     margin-left: 15%;
     margin-right: 15%;
     color: #EAECEE ;
-    z-index : 1;
     text-align: center;
     font-size: 2em;
 `;

@@ -8,8 +8,11 @@ import ListePizzas from './components/ListePizzas';
 import BodyHome from './components/BodyHome';
 import ChoixBasePizza from './components/ChoixBasePizza';
 import Secret from './components/Secret';
+import Apropo from './components/Apropos';
 import { createGlobalStyle } from 'styled-components';
 import RickonTTF from './Font/TheRickon.ttf';
+
+
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -57,6 +60,7 @@ function Explore() {
 function Apropos() {
   return (<React.Fragment>
     <Navbar />
+    <Apropo/>
   </React.Fragment>);
 }
 function ContactF() {

@@ -3,21 +3,26 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "agentkeepalive": "^4.1.4",
+    "bootstrap": "^4.6.0",
     "browserify": "^17.0.0",
     "browserify-fs": "^1.0.0",
     "d3": "^6.7.0",
+    "express": "^4.17.1",
     "mysql": "^2.18.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.1",
+    "react-instagram-embed": "^2.0.0",
     "react-player": "^2.9.0",
     "react-responsive": "^8.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "reactjs-popup": "^2.0.5",
     "styled-components": "^5.2.1"
   },
   "scripts": {
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,5 +54,6 @@
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "gh-pages": "^3.2.1"
-  }
+  },
+  "homepage": "https://giuseppe-france.fr"
 }
