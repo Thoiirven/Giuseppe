@@ -3,16 +3,22 @@ import myData from '../../public/Secret.json';
 import { BodyHomeBody, PageBody, Titre2,Form, Textarea } from './Secret';
 
 class Secret extends Component {
+    
     constructor(props) {
         super(props);
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
     state = {
         value: "Mot de passe",
-        utilisateur: "Nom utilisateur"
+        utilisateur: "Nom utilisateur",
+        motedepasse: '2828',
+        nombreVu:0,
+        nombreEssai:0
     }
+
     handleChange(event) {
         if(event.target.name === "Nom utilisateur"){
             this.setState({ utilisateur: event.target.value });
@@ -20,68 +26,27 @@ class Secret extends Component {
             this.setState({ value: event.target.value });
         }
     }
-    
+
     handleSubmit(event) {
         var Valeur = this.state.value;
         var util = this.state.utilisateur;
-        var fs = require('browserify-fs');
-        var content;
-        var jsonT, obj,test;
-
         if(util !== "Giuseppe"){
             alert("Mauvais nom d'utilisateur")
         }else{
-            fs.readFile(myData, 'utf8', function (err, data) {
-                test = JSON.parse(data);
-                content = test;
-                console.log(content.table)
-                if (Valeur === JSON.stringify(content.table) && content.vu === 0) {
+                if (Valeur === this.state.motedepasse && this.state.nombreVu === 0) {
                     alert('Bien joué voici votre code pour votre Pizza: R2l1c2VwcGU= \n fun fact: ce code représente le mot Giuseppe mais en base 64');
-                    obj = {
-                        vu: content.vu + 1,
-                        Nombre: content.Nombre,
-                        table: content.table
-                    };
-
-                    jsonT = JSON.stringify(obj);
-                    fs.writeFile(myData, jsonT, function () {
-                        fs.readFile(myData, 'utf-8', function (err, data) {
-                            console.log(data);
-                        });
-                    }
-                    );
+                    this.setState({ nombreVu: this.state.nombreVu + 1 });
                 }else {
-                        obj = {
-                            vu: 0,
-                            Nombre: content.Nombre + 1,
-                            table: content.table
-                        };
-                        jsonT = JSON.stringify(obj);
-                        fs.writeFile(myData, jsonT, function () {
-                            fs.readFile(myData, 'utf-8', function (err, data) {
-                                console.log(data);
-                            });
-                        }
-                        );
-                    alert('Mauvais mot de passe ! Déjà ' + content.Nombre + ' personnes ont essayé');
+                    this.setState({ nombreEssai: this.state.nombreEssai + 1 });
+                    alert('Mauvais mot de passe ! Déjà ' + this.state.nombreEssai + ' personnes ont essayé');
                 }
-                if(content.vu > 0){
+                if(this.state.nombreVu > 0){
                     alert('Le code a déjà été trouvé')
                 }
-    
-    
-            });
-    
         }
-        
-
-
         event.preventDefault();
     }
-
-    componentDidMount() {
-        
-    }
+    
     render() {
         return (
                 <BodyHomeBody>

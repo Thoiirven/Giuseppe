@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 import Popup from 'reactjs-popup';
 import { BodyHomeBody, BodyP, BodyDiv, BodyBcreme, BodyBtomate, FlexContainer, FlexItem, FlexItemP, FlexItemI, ImagePizza, 
-Modal, Close, Header, Content, Action, BodyBouton, BoutonFermer} from './ChoixBasePizza';
+Modal, Close, Header, Content, Action, BodyBouton, BoutonFermer, ContentBold, BodyBoutonBase} from './ChoixBasePizza';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { json } from 'd3';
 import logo from '../../images/LogoNatan.jpg';
@@ -9,7 +9,7 @@ import 'reactjs-popup/dist/index.css';
 
 const FenetreModal = () => (
     <Popup
-      trigger={<BodyBouton id="SousTitre"> Liste ingrédients </BodyBouton>}
+      trigger={<BodyBouton id="SousTitre"> Liste des suppléments </BodyBouton>}
       modal
       nested
     >
@@ -19,14 +19,15 @@ const FenetreModal = () => (
             &times;
           </Close>
           <Header id="Titre"> Liste ingrédients </Header>
+          <ContentBold id="SousTitre">0.50 € de supplément: </ContentBold>
           <Content id="SousTitre">
             Olives, champignons, tomates cerises,
             mozzarella, jambon, poulet, poivrons, chorizo, lardon, 
-            billes de mozzarella fraîches, câpres, anchois, oignons, miel: 0.50 € de supplément
+            billes de mozzarella fraîches, câpres, anchois, oignons, miel.
           </Content>
+          <ContentBold id="SousTitre">1 € de supplément: </ContentBold>
           <Content id="SousTitre">
-             Chèvre, morbier, fromage à raclette, viande hachée, saumon mariné, kebab, merguez: 1€ de supplément
-
+             Chèvre, morbier, fromage à raclette, viande hachée, saumon mariné, kebab, merguez.
           </Content>
           <Action>
             <BoutonFermer id="SousTitre"
@@ -70,22 +71,25 @@ class ChoixBasePizza extends Component {
                 <BodyHomeBody>
                     <BodyDiv id="BodyBouton">
                         <BodyP>Quelle base pour votre Pizza voulez-vous ?</BodyP>
-                        <Router forceRefresh={true}>
-                            <Link to="/Explore/Creme"><BodyBcreme id="BoutonPizzas">Liste avec une base crème</BodyBcreme></Link>
-                            <Link to="/Explore/Tomate"><BodyBtomate id="BoutonPizzas">Liste avec une base tomate</BodyBtomate></Link>
-                        </Router>
+                        <BodyBoutonBase>
+                          <Router forceRefresh={true}>
+                              <Link to="/Explore/Creme"><BodyBcreme id="BoutonPizzas">Base crème</BodyBcreme></Link>
+                              <Link to="/Explore/Tomate"><BodyBtomate id="BoutonPizzas">Base tomate</BodyBtomate></Link>
+                          </Router>
+                        </BodyBoutonBase>
                     </BodyDiv>
+                    <FenetreModal/>
                     <FlexContainer>
                         {this.state.PizzasBaseCreme.map(Pizzas => (<FlexItem id="listePizzas"><FlexItemP>{Pizzas.Nom} </FlexItemP>
                             <ImagePizza id="imagelogo">
                                 <img src={Pizzas.Image} />
                             </ImagePizza>
-                            <FlexItemI>Base : {Pizzas.Base}</FlexItemI>
-                            <FlexItemI>Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-" + Ingred.Ingrédient + " "))}</FlexItemI>
-                            <FlexItemI>Prix : {Pizzas.Prix}</FlexItemI>
+                            <FlexItemI id="Ingred">Base : {Pizzas.Base}</FlexItemI>
+                            <FlexItemI id="Ingred">Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-" + Ingred.Ingrédient + " "))}</FlexItemI>
+                            <FlexItemI id="Ingred">Prix : {Pizzas.Prix}</FlexItemI>
                         </FlexItem>))}
                     </FlexContainer>
-                    <FenetreModal/>
+                    
                 </BodyHomeBody>
             </>
         );

@@ -29,16 +29,20 @@ export const Objet = styled.div`
     justify-content: center;  
 `;
 export const CoteTexte = styled.div`
+    background-color: #BEBEBE;
     padding: 1em;
     font-size:2em;
     text-align:center;
     z-index : 1;
-    :hover {
-        background-color: #BEBEBE;
-    }
 `;
 export const CoteImage = styled.div`
     display: block;
     width: auto;
     heigth:auto;
+`;
+export const Titre = styled.h1`
+    padding: 1em;
+    font-size:3em;
+    text-align:center;
+    z-index : 1;
 `;

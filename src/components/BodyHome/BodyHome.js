@@ -43,11 +43,11 @@ export const Carte = styled.div`
     margin-top: 1em;
 `;
 export const ImageLogo = styled.div`
+    box-shadow: 4.5px 4.5px 4.5px black;
     display: flex;
     margin : auto;
     width: 500px; 
     height: 500px;
-    
     justify-content:center;
 `;
 export const BodyBordure = styled.div`
@@ -98,7 +98,8 @@ export const BodyBouton = styled.button`
     background-color: white;
     color: black;
     border: 0.2px solid #FF7902;
-    padding: 0.8em 1.4em;
+    box-shadow: 4.5px 4.5px 4.5px #FF7902;
+    padding: 0.5em 1em;
     text-align: center;
     font-size: 1em;
     margin: 0.5em;
@@ -123,4 +124,21 @@ export const Secret = styled.div`
     color:rgba(0, 0, 0, 0);
     float: left;
     font-size: 1.5em;
+`;
+export const FlexContainer = styled.div`
+    display : flex;
+    flex-wrap: wrap;
+    padding: auto;
+    margin-top: 1em;
+    list-style: none;
+`;
+
+export const FlexItem = styled.div`
+    margin:auto;
+    :hover {
+        background-color: #BEBEBE;
+    }
+    width: 500px;
+    height:auto;
+
 `;

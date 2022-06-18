@@ -227,7 +227,7 @@
     {
         "Nom": "La Noa",
         "Ingrédients": [
-            { "Ingrédient" : "3 ingrédients au choix, puis mozarella et olives"}
+            { "Ingrédient" : "3 ingrédients au choix parmis les suppléments, puis mozarella et olives"}
         ],
         "Base" : "Tomate ou Crème",
         "Prix": "12.50 €",

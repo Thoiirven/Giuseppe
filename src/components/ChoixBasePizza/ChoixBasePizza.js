@@ -11,14 +11,17 @@ export const BodyHomeBody = styled.div`
 `;
 export const BodyDiv = styled.div`
     padding: 1em;
-    height:600px;
+    height:500px;
 `;
 export const BodyP = styled.p`
     margin-top: 2em;
     text-align:center;
     font-size:1.4cm;
+    font-weight: bold;
 `;
 export const BodyBcreme = styled.button`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black;
     background-color: rgb(253, 241, 184);
     border-radius: 20%;
     color: black;
@@ -36,6 +39,8 @@ export const BodyBcreme = styled.button`
     }
 `;
 export const BodyBtomate = styled.button`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black;
     background-color: rgb(215,14,24);
     border-radius: 20%;
     color: black;
@@ -66,7 +71,7 @@ export const FlexItem = styled.div`
     border-radius: 20px;
     margin:auto;
     margin-bottom:2em;
-    box-shadow: 4.5px 4.5px 4.5px #494949;
+    box-shadow: 4.5px 4.5px 4.5px #494949,-4.5px -4.5px 4.5px #494949 ;
     color: rgb(20,135,56);
     Background-color: black;
     font-weight: bold;
@@ -85,7 +90,7 @@ export const FlexItemI = styled.p`
     font-weight: bold;
     padding: 8px 16px;
     font-style: italic;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 `;
 export const ImagePizza = styled.div`
@@ -108,8 +113,10 @@ export const Header= styled.p`
 `;
 export const Content= styled.div`
     width: 100%;
-    
     padding: 10px 5px;
+`;
+export const ContentBold= styled.div`
+    font-weight: bolder;
 `;
 export const Action= styled.div`
     width: 100%;
@@ -118,6 +125,8 @@ export const Action= styled.div`
     text-align: center;
 `;
 export const Close= styled.button`
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black;
     cursor: pointer;
     position: absolute;
     display: block;
@@ -133,21 +142,34 @@ export const Close= styled.button`
     }
 `;
 export const BodyBouton = styled.button`
+    margin: auto;
+    margin-bottom: 2em;
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;   
-    background-color: white;
-    color: black;
+    justify-content: center;
     text-align: center;
-    font-size: 4em;
-    margin: auto;
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 3em;
     transition-duration: 0.4s;
     cursor: pointer;
     :hover {
         background-color: rgb(20,135,56);
         color: white;
     }
+`;
+export const BodyBoutonBase = styled.div`
+    margin: auto;
+    margin-bottom: 2em;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    transition-duration: 0.4s;
 `;
 export const BoutonFermer = styled.button`
     display: flex;
@@ -160,6 +182,8 @@ export const BoutonFermer = styled.button`
     margin: auto;
     transition-duration: 0.4s;
     cursor: pointer;
+    border: 3.8px solid black;
+    box-shadow: 4.5px 4.5px 4.5px black;
     :hover {
         background-color: red;
         color: white;

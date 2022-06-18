@@ -20,44 +20,31 @@ export const BodyP = styled.p`
     text-align:center;
     z-index : 1;
 `;
-export const ImageLogoInsta = styled.div`
-    display: flex;
-    width: 100px;
-	height: 100px;
-    margin-left:150px;
-    position: absolute;
+export const DivCentre = styled.div`
+    width: 50%;
+    text-align: centre;
 `;
-export const ImageLogoFacebook = styled.div`
+export const ImageLogoInsta = styled.p`
     display: flex;
-    width: 100px;
-	height: 100px;
-    margin-top: 100px;
-    margin-left:150px;
-    position: absolute;
+    float:left;
+`;
+export const ImageLogoFacebook = styled.p`
+    display: flex;
+    float:left;
 `;
 export const BodyInsta = styled.div`
+line-height:100px;
     padding: 5px;
     width: auto;
-    margin-right:575px;
-    margin-top: 20px;
-    margin-left: 300px;
     font-size:2em;
     z-index : 1;
     transition-duration: 0.4s;
-    :hover {
-        background-color: red;
-    }
 `;
 export const BodyFacebook = styled.div`
+line-height:100px;
     padding: 5px;
     width: auto;
-    margin-right:500px;
-    margin-top: 40px;
-    margin-left: 300px;
     font-size:2em;
     z-index : 1;
     transition-duration: 0.4s;
-    :hover {
-        background-color: blue;
-    }
 `;

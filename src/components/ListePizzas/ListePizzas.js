@@ -26,7 +26,7 @@ export const FlexContainer = styled.div`
     display : flex;
     flex-wrap: wrap;
     padding: auto;
-    margin: auto;
+    margin-top: 1em;
     list-style: none;
 `;
 
@@ -36,7 +36,7 @@ export const FlexItem = styled.div`
     border-radius: 20px;
     margin:auto;
     margin-bottom:2em;
-    box-shadow: 4.5px 4.5px 4.5px #494949;
+    box-shadow: 4.5px 4.5px 4.5px #494949,-4.5px -4.5px 4.5px #494949 ;
     color: rgb(20,135,56);
     Background-color: black;
     font-weight: bold;
@@ -44,7 +44,7 @@ export const FlexItem = styled.div`
         background-color: #BEBEBE;
     }
     width: 630px;
-    height:1300px;
+    height:1050px;
 
 `;
 export const FlexItemP = styled.h2`
@@ -56,7 +56,7 @@ export const FlexItemI = styled.p`
     font-weight: bold;
     padding: 8px 16px;
     font-style: italic;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 `;
 export const ImagePizza = styled.div`

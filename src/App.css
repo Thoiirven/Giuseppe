@@ -37,7 +37,9 @@
       }
       #BoutonPizzas{
         font-size: 4em;
-        float: left;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
       }
       #BodyBouton{
         height:1000px;
@@ -56,5 +58,8 @@
         width :100% ;
         height: 100%;
         font-size: 4em;
+      }
+      #Ingred{
+        font-size: 3em;
       }
     }

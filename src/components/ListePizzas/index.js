@@ -25,6 +25,7 @@ class ListePizzas extends Component {
             copie.push("Kebab");
             copie.push("Chorizo");
             copie.push("Viande hachée");
+            copie.push("Jambon Cru");
         }else{
             copie.push(event.target.value);
         }
@@ -85,8 +86,8 @@ class ListePizzas extends Component {
                                 <ImagePizza id="imagelogo">
                                     <img src={Pizzas.Image} />
                                 </ImagePizza>
-                                <FlexItemI>Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-" + Ingred.Ingrédient + " "))}</FlexItemI>
-                                <FlexItemI>Prix : {Pizzas.Prix}</FlexItemI>
+                                <FlexItemI id="Ingred">Ingrédients : {Pizzas.Ingrédients.map(Ingred => ("-" + Ingred.Ingrédient + " "))}</FlexItemI>
+                                <FlexItemI id="Ingred">Prix : {Pizzas.Prix}</FlexItemI>
                             </FlexItem>))}
                         </FlexContainer>
                     </PageBody>
